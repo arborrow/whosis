@@ -38,6 +38,13 @@ Route::resource('room', RoomController::class);
 
 Route::resource('school', SchoolController::class);
 
+Route::post('admin/permission/update_roles', 'PermissionController@update_roles')->name('admin.permission.update_roles');
+Route::post('admin/role/update_permissions', 'RoleController@update_permissions')->name('admin.role.update_permissions');
+Route::post('admin/role/update_users', 'RoleController@update_users')->name('admin.role.update_users');
+
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('phpinfo', 'AdminController@phpinfo')->name('phpinfo');
+    Route::resource('permission', 'PermissionController');
+    Route::resource('role', 'RoleController');
+    Route::resource('user', 'UserController');
 });
