@@ -25,7 +25,7 @@
                   <tbody class="text-gray-600 text-sm font-light">
                       @foreach($schools as $school)
                       <tr class="border-b border-gray-200 hover:bg-gray-100">
-                          <td  class="p-2 border-r-2 border-gray-500"><a href="{{URL('school/'.$school->id)}}">{{ $school->title }}</a></td>
+                          <td  class="p-2 border-r-2 border-gray-500 "><a href="{{URL('school/'.$school->id)}}" class="text-blue-700 hover:text-blue-900">{{ $school->title }}</a></td>
                           <td  class="p-2 border-r-2 border-gray-500">{{ $school->principal }}</ttext-d>
                           <td class="p-2 border-r-2 border-gray-500">{{ $school->address }}</td>
                           <td class="p-2 border-r-2 border-gray-500">{{ $school->phone }}</td>

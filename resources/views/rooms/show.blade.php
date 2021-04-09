@@ -1,19 +1,16 @@
 <x-app-layout>
 
 		<x-slot name="header">
-				<form method="POST" action="{{ route('room.destroy',$room->room_id) }}" id="delete">
-						@csrf
-						{{ method_field('DELETE') }}
-				</form>
-				<div class="font-semibold text-xl text-gray-800 leading-tight">
-						{{ $room->title }}
-						<x-jet-button>
-								<a href="{{ URL('room/'.$room->room_id.'/edit') }}">Edit</a>
-						</x-jet-button>
-							<x-jet-button form="delete">
-									{{ __('Delete') }}
-							</x-jet-button>
-					</div>
+			<x-form method="DELETE" action="{{ route('room.destroy', $room->room_id) }}" id="delete" />
+			<div class="font-semibold text-xl text-gray-800 leading-tight">
+				{{ $room->title }}
+				<x-jet-button class='ml-2'>
+					<a href="{{ URL('room/'.$room->room_id.'/edit') }}">Edit</a>
+				</x-jet-button>
+				<x-jet-button form="delete">
+						{{ __('Delete') }}
+				</x-jet-button>
+			</div>
 		</x-slot>
 
 		<x-content>

@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\StoreRoleRequest;
+use App\Http\Requests\UpdateRoleRequest;
+
 
 class RoleController extends Controller
 {
@@ -15,8 +18,8 @@ class RoleController extends Controller
 
     public function index()
     {
-        $this->authorize('show-role');
-        $roles = \App\Models\Role::orderBy('name')->get();
+        //$this->authorize('show-role');
+        $roles = \App\Models\Role::orderBy('name')->paginate();
 
         return view('admin.roles.index', compact('roles'));
     }
@@ -28,7 +31,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $this->authorize('create-role');
+        //$this->authorize('create-role');
 
         return view('admin.roles.create');
     }
@@ -39,9 +42,9 @@ class RoleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreRoleRequest $request)
     {
-        $this->authorize('create-role');
+        //$this->authorize('create-role');
 
         $role = new \App\Models\Role;
         $role->name = $request->input('name');
@@ -63,7 +66,7 @@ class RoleController extends Controller
      */
     public function show($id)
     {
-        $this->authorize('show-role');
+        //$this->authorize('show-role');
 
         $role = \App\Models\Role::with('users', 'permissions')->findOrFail($id);
         $permissions = \App\Models\Permission::orderBy('name')->pluck('name', 'id');
@@ -80,7 +83,7 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        $this->authorize('update-role');
+        // $this->authorize('update-role');
 
         $role = \App\Models\Role::findOrFail($id);
 
@@ -94,10 +97,9 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateRoleRequest $request, $id)
     {
-        $this->authorize('update-role');
-
+        //$this->authorize('update-role');
         $role = \App\Models\Role::findOrFail($request->input('id'));
         $role->name = $request->input('name');
         $role->display_name = $request->input('display_name');
@@ -117,7 +119,7 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        $this->authorize('delete-role');
+        // $this->authorize('delete-role');
 
         $role = \App\Models\Role::findOrFail($id);
         \App\Models\Role::destroy($id);

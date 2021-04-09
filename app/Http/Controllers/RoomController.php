@@ -33,7 +33,7 @@ class RoomController extends Controller
      */
     public function create()
     {
-        $schools = \App\Models\School::orderBy('title')->pluck('id','title');
+        $schools = \App\Models\School::orderBy('title')->pluck('title','id');
         return view('rooms.create',compact('schools'));
     }
 
@@ -83,7 +83,7 @@ class RoomController extends Controller
      */
     public function edit($id)
     {
-      $schools = \App\Models\School::orderBy('title')->pluck('id','title');
+      $schools = \App\Models\School::orderBy('title')->pluck('title','id');
       $room = \App\Models\Room::findOrFail($id);
 
       return view('rooms.edit', compact('room','schools'));

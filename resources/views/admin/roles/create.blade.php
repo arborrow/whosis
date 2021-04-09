@@ -1,36 +1,31 @@
-@extends('template')
-@section('content')
+<x-app-layout>
 
-<div class="row bg-cover">
-    <div class="col-12">
-        <h1>Create Role</h1>
-    </div>
-    <div class="col-12">
-        {!! Form::open(['url'=>'admin/role', 'method'=>'post']) !!}
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        {!! Form::label('name', 'Name') !!}
-                        {!! Form::text('name', NULL , ['class' => 'form-control']) !!}
-                    </div>
-                    <div class="col-12 col-md-4">
-                        {!! Form::label('display_name', 'Display Name')  !!}
-                        {!! Form::text('display_name', NULL , ['class' => 'form-control']) !!}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        {!! Form::label('description', 'Description') !!}
-                        {!! Form::textarea('description', NULL, ['class' => 'form-control', 'rows' => 3]) !!}
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-12">
-                    {!! Form::submit('Add Role', ['class'=>'btn btn-outline-dark']) !!}
-                </div>
-            </div>
-        {!! Form::close() !!}
-    </div>
-</div>
-@stop
+          <!-- Validation Errors -->
+          <x-jet-validation-errors class="mb-4" :errors="$errors" />
+
+    <x-slot name="header">
+        <div class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Create Role') }}
+            <x-jet-button form="save">
+                {{ __('Save') }}
+            </x-jet-button>
+
+        </div>
+    </x-slot>
+
+    <x-content>
+        <x-form :action="route('role.store')" id="save">
+            <x-form-input name="name" :label="__('Role name')" />
+            <x-form-input name="display_name" :label="__('Display name')"  />
+            <x-form-input name="description" :label="__('Description')" />
+        </x-form>
+
+        <div class="flex items-center justify-begin mt-4">
+            <x-jet-button form="save">
+                {{ __('Save') }}
+            </x-jet-button>
+        </div>
+
+    </x-content>
+
+</x-app-layout>

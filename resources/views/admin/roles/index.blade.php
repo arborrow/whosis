@@ -1,45 +1,45 @@
-@extends('template')
-@section('content')
+<x-app-layout>
+    <x-slot name="header">
+        <div class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Roles index') }} ({{ $records = $roles->isEmpty() ? 0 : $roles->total() }} records)
+            <x-jet-button class="ml-4">
+              <a href="{{ action('RoleController@create') }}">{{ __('Create role') }}</a>
+            </x-jet-button>
 
-<div class="row bg-cover">
-    <div class="col-12">
-        <h2>
-            Roles
-            @can('create-role')
-                <span class="options">
-                    <a href={{ action('RoleController@create') }}>
-                        <img src="{{ URL::asset('images/create.png') }}" alt="Add" class="btn btn-light" title="Add">
-                    </a>
-                </span>
-            @endCan
-        </h2>
-    </div>
-    <div class="col-12 my-3 table-responsive-md">
-        @if ($roles->isEmpty())
-            <div class="col-12 text-center py-5">
-                <p>It is a brand new world, there are no roles!</p>
-            </div>
-        @else
-            <table class="table table-striped table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Display name</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach($roles as $role)
-                    <tr>
-                        <td><a href="role/{{ $role->id}}">{{ $role->name }}</a></td>
-                        <td>{{ $role->display_name }}</td>
-                        <td>{{ $role->description }}</td>
-                    </tr>
-                    @endforeach
-                    
-                </tbody>
-            </table>
-        @endif
-    </div>
-</div>
-@stop
+        </div>
+    </x-slot>
+    <x-content>
+      @if ($roles->isEmpty())
+          <div class="py-5">
+              <p>It is a brand new world, there are no roles!</p>
+          </div>
+      @else
+          <table class="table-auto min-w-max w-full">
+              {{ $roles->render() }}
+              <thead>
+                  <tr class="bg-gray-200 text-gray-600 text-left text-sm">
+                      <th class="p-2 border-r-2 border-gray-500">{{__('Name') }}</th>
+                      <th class="p-2 border-r-2 border-gray-500">{{__('Display name') }}</th>
+                      <th class="p-2 border-gray-500">{{__('Description') }}</th>
+                  </tr>
+              </thead>
+              <tbody class="text-gray-600 text-sm font-light">
+                  @foreach($roles as $role)
+                  <tr class="border-b border-gray-200 hover:bg-gray-100">
+                      <td class="p-2 border-r-2 border-gray-500">
+                          <a href="role/{{ $role->id}}">{{ $role->name }}</a>
+                      </td>
+                      <td class="p-2 border-r-2 border-gray-500">
+                          {{ $role->display_name }}
+                      </td>
+                      <td class="p-2">
+                          {{ $role->description }}
+                      </td>
+                  </tr>
+                @endforeach
+              </tbody>
+          </table>
+      @endif
+
+    </x-content>
+</x-app-layout>

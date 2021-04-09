@@ -1,45 +1,27 @@
-@extends('template')
-@section('content')
-<div class="row bg-cover">
-    <div class="col-12">
-        <h1>Edit: {!! $role->name !!}</h1>    
-    </div>
-    <div class="col-12">
-        <div class="row">
-            <div class="col-12">
-                <h2>Permission Details</h2>    
-            </div>
-            <div class="col-12">
-                {!! Form::open(['method' => 'PUT', 'route' => ['role.update', $role->id]]) !!}
-                {!! Form::hidden('id', $role->id) !!}
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                        {!! Form::label('name', 'Name')  !!}
-                                        {!! Form::text('name', $role->name, ['class' => 'form-control']) !!}
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        {!! Form::label('display_name', 'Display name')  !!}
-                                        {!! Form::text('display_name', $role->display_name, ['class' => 'form-control']) !!}
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        {!! Form::label('description', 'Description')  !!}
-                                        {!! Form::text('description', $role->description, ['class' => 'form-control']) !!}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            {!! Form::image('images/save.png','btnSave',['class' => 'btn btn-outline-dark']) !!}
-                        </div>
-                    </div>
-                {!! Form::close() !!}  
-            </div>
-        </div>    
-    </div>  
-</div>
-@stop
+<x-app-layout>
+
+          <!-- Validation Errors -->
+          <x-jet-validation-errors class="mb-4" :errors="$errors" />
+
+    <x-slot name="header">
+        <div class="font-semibold text-xl text-gray-800 leading-tight">
+            Edit: {!! $role->name !!}
+            <x-jet-button form="update" class="ml-2">
+                {{ __('Update') }}
+            </x-jet-button>
+        </div>
+    </x-slot>
+    <x-content>
+        <x-form :action="route('role.update', $role->id)" id="update" method="PUT">
+            <x-form-input name="id" type="hidden" :value="$role->id" />
+            <x-form-input name="name" :label="__('Role name')" :default="$role->name" />
+            <x-form-input name="display_name" :label="__('Display name')" :default="$role->display_name" />
+            <x-form-input name="description" :label="__('Description')" :default="$role->description"/>
+        </x-form>
+        <div class="flex items-center justify-begin mt-4">
+            <x-jet-button form="update">
+                {{ __('Update') }}
+            </x-jet-button>
+        </div>
+    </x-content>
+</x-app-layout>
