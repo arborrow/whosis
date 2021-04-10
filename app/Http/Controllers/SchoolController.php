@@ -56,7 +56,7 @@ class SchoolController extends Controller
 
       $school->save();
 
-      flash($school->title.' saved')->success();
+      \Session::flash('flash.banner', $school->title.' '.__('saved'));
 
       return Redirect::action('SchoolController@show', $school->id); //
 
@@ -109,10 +109,10 @@ class SchoolController extends Controller
         $school->www_address = $request->input('www_address');
         $school->save();
 
-        flash($school->title.' updated')->success();
+        \Session::flash('flash.banner', $school->title.' '.__('updated'));
+        \Session::flash('flash.bannerStyle', 'success');
 
         return redirect()->action([SchoolController::class, 'show'], $id);
-
 
     }
 
@@ -128,7 +128,8 @@ class SchoolController extends Controller
 
       \App\Models\School::destroy($id);
 
-      flash($school->title.' deleted')->warning()->important();
+      \Session::flash('flash.banner', $school->title.' '.__('deleted'));
+      \Session::flash('flash.bannerStyle', 'warning');
 
       return Redirect::action('SchoolController@index');
 

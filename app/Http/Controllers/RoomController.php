@@ -56,7 +56,8 @@ class RoomController extends Controller
 
       $room->save();
 
-      flash($room->title.' saved')->success();
+      \Session::flash('flash.banner', $room->title.' '.__('saved'));
+      \Session::flash('flash.bannerStyle', 'success');
 
       return Redirect::action('RoomController@show', $room->room_id); //
 
@@ -110,7 +111,8 @@ class RoomController extends Controller
         $room->sort_order = $request->input('sort_order');
         $room->save();
 
-        flash($room->title.' updated')->success();
+        \Session::flash('flash.banner', $room->title.' '.__('updated'));
+        \Session::flash('flash.bannerStyle', 'success');
 
         return redirect()->action([RoomController::class, 'show'], $id);
 
@@ -128,7 +130,9 @@ class RoomController extends Controller
 
       \App\Models\Room::destroy($id);
 
-      flash($room->title.' deleted')->warning()->important();
+      \Session::flash('flash.banner', $room->title.' '.__('deleted'));
+      \Session::flash('flash.bannerStyle', 'warning');
+
 
       return Redirect::action('RoomController@index');
 

@@ -18,6 +18,18 @@
                     <x-jet-nav-link href="{{ route('room.index') }}" :active="request()->routeIs('room.index')">
                         {{ __('Rooms') }}
                     </x-jet-nav-link>
+
+                    <x-nav-link-parent :href="'#'" :active="request()->routeIs('padron.*')">
+                        <x-slot name="name">Admin</x-slot>
+                        <x-slot name="children">
+                            <a href="{{ route('permission.index') }}">{{ __('Permissions') }}</a>
+                            <a href="{{ route('role.index') }}">{{ __('Roles') }}</a>
+                            <a href="{{ route('user.index') }}">{{ __('Users') }}</a>
+                            <span class="separator"></span>
+                            <a href="{{ route('dashboard') }}">Activity log</a>
+                            <a href="{{ route('dashboard') }}">Audit log</a>
+                        </x-slot>
+                    </x-nav-link-parent>
                 </div>
             </div>
 
@@ -144,7 +156,22 @@
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-jet-responsive-nav-link>
+
+            <x-jet-responsive-nav-link href="{{ route('school.index') }}" :active="request()->routeIs('school')">
+                {{ __('Schools') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('room.index') }}" :active="request()->routeIs('room')">
+                {{ __('Rooms') }}
+            </x-jet-responsive-nav-link>
+
+            <x-responsive-nav-link-parent href="{{ route('school.index') }}" :active="request()->routeIs('school.index')">
+                <x-slot name="name">Schools</x-slot>
+                <x-slot name="children">
+                    <a href="{{ route('room.index') }}">Rooms</a>
+                </x-slot>
+            </x-responsive-nav-link-parent>
         </div>
+
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">

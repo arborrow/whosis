@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\StoreRoleRequest;
 use App\Http\Requests\UpdateRoleRequest;
 
-
 class RoleController extends Controller
 {
     //
@@ -53,7 +52,8 @@ class RoleController extends Controller
 
         $role->save();
 
-        flash('Role: <a href="'.url('/admin/role/'.$role->id).'">'.$role->name.'</a> added')->success();
+        \Session::flash('flash.banner', $role->name. ' ' . __('saved'));
+        \Session::flash('flash.bannerStyle', 'success');
 
         return Redirect::action('RoleController@index');
     }
@@ -106,7 +106,8 @@ class RoleController extends Controller
         $role->description = $request->input('description');
         $role->save();
 
-        flash('Role: <a href="'.url('/admin/role/'.$role->id).'">'.$role->name.'</a> updated')->success();
+        \Session::flash('flash.banner', $role->name. ' ' . __('updated'));
+        \Session::flash('flash.bannerStyle', 'success');
 
         return Redirect::action('RoleController@index');
     }
@@ -124,7 +125,8 @@ class RoleController extends Controller
         $role = \App\Models\Role::findOrFail($id);
         \App\Models\Role::destroy($id);
 
-        flash('Role: '.$role->name.' deleted')->warning()->important();
+        \Session::flash('flash.banner', $role->name. ' ' . __('deleted'));
+        \Session::flash('flash.bannerStyle', 'warning');
 
         return Redirect::action('RoleController@index');
     }
@@ -136,7 +138,7 @@ class RoleController extends Controller
         $role->permissions()->detach();
         $role->permissions()->sync($request->input('permissions'));
 
-        flash('Permissions successfully updated for role: <a href="'.url('/admin/role/'.$role->id).'">'.$role->name.'</a>')->success();
+        \Session::flash('flash.banner', __('Permissions updated for role') . ': ' . $role->name );
 
         return Redirect::action('RoleController@index');
     }
@@ -148,7 +150,7 @@ class RoleController extends Controller
         $role->users()->detach();
         $role->users()->sync($request->input('users'));
 
-        flash('Users successfully updated for role: <a href="'.url('/admin/role/'.$role->id).'">'.$role->name.'</a>')->success();
+        \Session::flash('flash.banner', __('Users updated for role') . ': ' . $role->name );
 
         return Redirect::action('RoleController@index');
     }
