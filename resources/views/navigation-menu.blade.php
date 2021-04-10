@@ -158,18 +158,14 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link-parent href="{{ route('school.index') }}" :active="request()->routeIs('school.index')">
-                <x-slot name="name">School</x-slot>
-                <x-slot name="children">
-                    <a href="{{ route('school.index') }}">Schools</a>
-                    <a href="{{ route('room.index') }}">Rooms</a>
-                </x-slot>
-            </x-responsive-nav-link-parent>
+
+            <x-jet-responsive-nav-link href="{{ route('school.index') }}" :active="request()->routeIs('school')">
+                {{ __('Schools') }}
+            </x-jet-responsive-nav-link>
 
             <x-jet-responsive-nav-link href="{{ route('room.index') }}" :active="request()->routeIs('room')">
                 {{ __('Rooms') }}
             </x-jet-responsive-nav-link>
-
 
             <x-responsive-nav-link-parent :href="'admin'" :active="request()->routeIs('admin.*')">
                 <x-slot name="name">Admin</x-slot>
