@@ -19,7 +19,7 @@
                         {{ __('Rooms') }}
                     </x-jet-nav-link>
 
-                    <x-nav-link-parent :href="'#'" :active="request()->routeIs('padron.*')">
+                    <x-nav-link-parent :href="'admin'" :active="request()->routeIs('admin')">
                         <x-slot name="name">Admin</x-slot>
                         <x-slot name="children">
                             <a href="{{ route('permission.index') }}">{{ __('Permissions') }}</a>
@@ -94,6 +94,9 @@
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
                             <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
                                 <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                                <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
                             </button>
                             @else
                             <span class="inline-flex rounded-md">
@@ -155,23 +158,32 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
-            </x-jet-responsive-nav-link>
+            <x-responsive-nav-link-parent href="{{ route('school.index') }}" :active="request()->routeIs('school.index')">
+                <x-slot name="name">School</x-slot>
+                <x-slot name="children">
+                    <a href="{{ route('school.index') }}">Schools</a>
+                    <a href="{{ route('room.index') }}">Rooms</a>
+                </x-slot>
+            </x-responsive-nav-link-parent>
 
-            <x-jet-responsive-nav-link href="{{ route('school.index') }}" :active="request()->routeIs('school')">
-                {{ __('Schools') }}
-            </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('room.index') }}" :active="request()->routeIs('room')">
                 {{ __('Rooms') }}
             </x-jet-responsive-nav-link>
 
-            <x-responsive-nav-link-parent href="{{ route('school.index') }}" :active="request()->routeIs('school.index')">
-                <x-slot name="name">Schools</x-slot>
+
+            <x-responsive-nav-link-parent :href="'admin'" :active="request()->routeIs('admin.*')">
+                <x-slot name="name">Admin</x-slot>
                 <x-slot name="children">
-                    <a href="{{ route('room.index') }}">Rooms</a>
+                    <a href="{{ route('permission.index') }}">{{ __('Permissions') }}</a>
+                    <a href="{{ route('role.index') }}">{{ __('Roles') }}</a>
+                    <a href="{{ route('user.index') }}">{{ __('Users') }}</a>
+                    <span class="separator"></span>
+                    <a href="{{ route('dashboard') }}">Activity log</a>
+                    <a href="{{ route('dashboard') }}">Audit log</a>
                 </x-slot>
             </x-responsive-nav-link-parent>
+
+
         </div>
 
 

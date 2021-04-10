@@ -18,42 +18,21 @@
 		<x-show-field :value="$role->display_name">{{ __('Display name') }}</x-show-field>
 		<x-show-field :value="$role->description">{{ __('Description') }}</x-show-field>
 
-		<div class="col-12">
-			{!! Form::open(['url' => 'admin/role/update_permissions', 'method' => 'POST', 'route' => ['role.update_permissions']]) !!}
-			{!! Form::hidden('id',$role->id) !!}
-			<div class="form-group">
-				<div class="row">
-					<div class="col-8">
-						{!! Form::label('permissions',$role->name.' Permissions:') !!}
-						{!! Form::select('permissions[]', $permissions, $role->permissions->pluck('id')->toArray(), ['id'=>'permissions','class' => 'form-control select2','multiple' => 'multiple']) !!}
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					{!! Form::submit('Update Permissions', ['class'=>'btn btn-light']) !!}
-				</div>
-			</div>
-			{!! Form::close() !!}
-		</div>
-		<div class="col-12 mt-5">
-			{!! Form::open(['url' => 'admin/role/update_users', 'method' => 'POST', 'route' => ['role.update_users']]) !!}
-			{!! Form::hidden('id',$role->id) !!}
-			<div class="form-group">
-				<div class="row">
-					<div class="col-8">
-						{!! Form::label('users', 'Users with '.$role->name.' role:') !!}
-						{!! Form::select('users[]', $users, $role->users->pluck('id')->toArray(), ['id'=>'users', 'class' => 'form-control select2','multiple' => 'multiple']) !!}
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					{!! Form::submit('Update Users', ['class'=>'btn btn-light']) !!}
-				</div>
-			</div>
-			{!! Form::close() !!}
-		</div>
+		<hr class="mt-4" />
+
+		<x-form :action="route('admin.role.update_permissions')" id="update_permissions" method="POST">
+			<x-form-input name="id" type="hidden" :value="$role->id" />
+			<x-form-select name="permissions" :options="$permissions" label="Permissions for:" :default="$role->permissions->pluck('id')->toArray()" multiple />
+			<x-form-submit>Update permissions</x-form-submit>
+		</x-form>
+
+		<hr class="mt-4" />
+
+		<x-form :action="route('admin.role.update_users')" id="update_users" method="POST">
+			<x-form-input name="id" type="hidden" :value="$role->id" />
+			<x-form-select name="users" :options="$users" label="Users for:" :default="$role->users->pluck('id')->toArray()" multiple />
+			<x-form-submit>Update users</x-form-submit>
+		</x-form>
 
 	</x-content>
 
