@@ -7,7 +7,6 @@ use App\Http\Requests\StoreSchoolRequest;
 use App\Http\Requests\UpdateSchoolRequest;
 
 class SchoolController extends Controller
-
 {
     public function __construct()
     {
@@ -21,9 +20,9 @@ class SchoolController extends Controller
      */
     public function index()
     {
-      $schools = \App\Models\School::orderBy('title', 'ASC')->paginate(25);
+        $schools = \App\Models\School::orderBy('title', 'ASC')->paginate(25);
 
-      return view('schools.index', compact('schools'));
+        return view('schools.index', compact('schools'));
     }
 
     /**
@@ -44,22 +43,21 @@ class SchoolController extends Controller
      */
     public function store(StoreSchoolRequest $request)
     {
-      $school = new \App\Models\School;
-      $school->title = $request->input('title');
-      $school->principal = $request->input('principal');
-      $school->address = $request->input('address');
-      $school->city = $request->input('city');
-      $school->state = $request->input('state');
-      $school->phone = $request->input('phone');
-      $school->e_mail = $request->input('e_mail');
-      $school->www_address = $request->input('www_address');
+        $school = new \App\Models\School;
+        $school->title = $request->input('title');
+        $school->principal = $request->input('principal');
+        $school->address = $request->input('address');
+        $school->city = $request->input('city');
+        $school->state = $request->input('state');
+        $school->phone = $request->input('phone');
+        $school->e_mail = $request->input('e_mail');
+        $school->www_address = $request->input('www_address');
 
-      $school->save();
+        $school->save();
 
-      \Session::flash('flash.banner', $school->title.' '.__('saved'));
+        \Session::flash('flash.banner', $school->title.' '.__('saved'));
 
-      return Redirect::action('SchoolController@show', $school->id); //
-
+        return Redirect::action('SchoolController@show', $school->id); //
     }
 
     /**
@@ -70,9 +68,8 @@ class SchoolController extends Controller
      */
     public function show($id)
     {
-      $school = \App\Models\School::findOrFail($id);
-      return view('schools.show', compact('school'));
-
+        $school = \App\Models\School::findOrFail($id);
+        return view('schools.show', compact('school'));
     }
 
     /**
@@ -83,8 +80,8 @@ class SchoolController extends Controller
      */
     public function edit($id)
     {
-      $school = \App\Models\School::findOrFail($id);
-      return view('schools.edit', compact('school'));
+        $school = \App\Models\School::findOrFail($id);
+        return view('schools.edit', compact('school'));
     }
 
     /**
@@ -113,7 +110,6 @@ class SchoolController extends Controller
         \Session::flash('flash.bannerStyle', 'success');
 
         return redirect()->action([SchoolController::class, 'show'], $id);
-
     }
 
     /**
@@ -124,14 +120,13 @@ class SchoolController extends Controller
      */
     public function destroy($id)
     {
-      $school = \App\Models\School::findOrFail($id);
+        $school = \App\Models\School::findOrFail($id);
 
-      \App\Models\School::destroy($id);
+        \App\Models\School::destroy($id);
 
-      \Session::flash('flash.banner', $school->title.' '.__('deleted'));
-      \Session::flash('flash.bannerStyle', 'warning');
+        \Session::flash('flash.banner', $school->title.' '.__('deleted'));
+        \Session::flash('flash.bannerStyle', 'warning');
 
-      return Redirect::action('SchoolController@index');
-
+        return Redirect::action('SchoolController@index');
     }
 }

@@ -12,11 +12,10 @@ class AdminController extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function phpinfo()
-  {
-      // $this->authorize('show-admin-menu');
+    public function phpinfo()
+    {
+        // $this->authorize('show-admin-menu');
 
-      return view('admin.phpinfo');
-  }
-
+        return view('admin.phpinfo');
+    }
 }

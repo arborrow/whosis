@@ -138,7 +138,7 @@ class RoleController extends Controller
         $role->permissions()->detach();
         $role->permissions()->sync($request->input('permissions'));
 
-        \Session::flash('flash.banner', __('Permissions updated for role') . ': ' . $role->name );
+        \Session::flash('flash.banner', __('Permissions updated for role') . ': ' . $role->name);
 
         return Redirect::action('RoleController@index');
     }
@@ -150,7 +150,7 @@ class RoleController extends Controller
         $role->users()->detach();
         $role->users()->sync($request->input('users'));
 
-        \Session::flash('flash.banner', __('Users updated for role') . ': ' . $role->name );
+        \Session::flash('flash.banner', __('Users updated for role') . ': ' . $role->name);
 
         return Redirect::action('RoleController@index');
     }

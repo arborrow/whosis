@@ -1,7 +1,7 @@
 <x-app-layout>
 
-          <!-- Validation Errors -->
-          <x-jet-validation-errors class="mb-4" :errors="$errors" />
+    <!-- Validation Errors -->
+    <x-jet-validation-errors class="mb-4" :errors="$errors" />
 
     <x-slot name="header">
         <div class="font-semibold text-xl text-gray-800 leading-tight">

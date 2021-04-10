@@ -6,10 +6,9 @@
 * Links (anchor tags) should be blue when appearing in a table
 * Can easily be overridden by using tailwind in class
 */
-
 td a {
---tw-text-opacity: 1;
-color: rgba(29, 78, 216, var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(29, 78, 216, var(--tw-text-opacity));
 }
 
 td a:hover {
@@ -21,7 +20,6 @@ td a:hover {
 * Implementation of dropdown navigation per
 * https://dev.to/laviku/dropdown-component-for-main-menu-laravel-breeze-tailwind-2a26
 */
-
 .children {
     background: #fff;
 }

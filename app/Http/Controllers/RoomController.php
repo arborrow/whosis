@@ -7,7 +7,6 @@ use App\Http\Requests\StoreRoomRequest;
 use App\Http\Requests\UpdateRoomRequest;
 
 class RoomController extends Controller
-
 {
     public function __construct()
     {
@@ -21,9 +20,9 @@ class RoomController extends Controller
      */
     public function index()
     {
-      $rooms = \App\Models\Room::orderBy('title', 'ASC')->paginate(25);
+        $rooms = \App\Models\Room::orderBy('title', 'ASC')->paginate(25);
 
-      return view('rooms.index', compact('rooms'));
+        return view('rooms.index', compact('rooms'));
     }
 
     /**
@@ -33,8 +32,8 @@ class RoomController extends Controller
      */
     public function create()
     {
-        $schools = \App\Models\School::orderBy('title')->pluck('title','id');
-        return view('rooms.create',compact('schools'));
+        $schools = \App\Models\School::orderBy('title')->pluck('title', 'id');
+        return view('rooms.create', compact('schools'));
     }
 
     /**
@@ -46,21 +45,20 @@ class RoomController extends Controller
      */
     public function store(StoreRoomRequest $request)
     {
-      $room = new \App\Models\Room;
+        $room = new \App\Models\Room;
 
-      $room->school_id = $request->input('school_id');
-      $room->title = $request->input('title');
-      $room->capacity = $request->input('capacity');
-      $room->description = $request->input('description');
-      $room->sort_order = $request->input('sort_order');
+        $room->school_id = $request->input('school_id');
+        $room->title = $request->input('title');
+        $room->capacity = $request->input('capacity');
+        $room->description = $request->input('description');
+        $room->sort_order = $request->input('sort_order');
 
-      $room->save();
+        $room->save();
 
-      \Session::flash('flash.banner', $room->title.' '.__('saved'));
-      \Session::flash('flash.bannerStyle', 'success');
+        \Session::flash('flash.banner', $room->title.' '.__('saved'));
+        \Session::flash('flash.bannerStyle', 'success');
 
-      return Redirect::action('RoomController@show', $room->room_id); //
-
+        return Redirect::action('RoomController@show', $room->room_id); //
     }
 
     /**
@@ -71,9 +69,8 @@ class RoomController extends Controller
      */
     public function show($id)
     {
-      $room = \App\Models\Room::findOrFail($id);
-      return view('rooms.show', compact('room'));
-
+        $room = \App\Models\Room::findOrFail($id);
+        return view('rooms.show', compact('room'));
     }
 
     /**
@@ -84,10 +81,10 @@ class RoomController extends Controller
      */
     public function edit($id)
     {
-      $schools = \App\Models\School::orderBy('title')->pluck('title','id');
-      $room = \App\Models\Room::findOrFail($id);
+        $schools = \App\Models\School::orderBy('title')->pluck('title', 'id');
+        $room = \App\Models\Room::findOrFail($id);
 
-      return view('rooms.edit', compact('room','schools'));
+        return view('rooms.edit', compact('room', 'schools'));
     }
 
     /**
@@ -115,7 +112,6 @@ class RoomController extends Controller
         \Session::flash('flash.bannerStyle', 'success');
 
         return redirect()->action([RoomController::class, 'show'], $id);
-
     }
 
     /**
@@ -126,15 +122,14 @@ class RoomController extends Controller
      */
     public function destroy($id)
     {
-      $room = \App\Models\Room::findOrFail($id);
+        $room = \App\Models\Room::findOrFail($id);
 
-      \App\Models\Room::destroy($id);
+        \App\Models\Room::destroy($id);
 
-      \Session::flash('flash.banner', $room->title.' '.__('deleted'));
-      \Session::flash('flash.bannerStyle', 'warning');
+        \Session::flash('flash.banner', $room->title.' '.__('deleted'));
+        \Session::flash('flash.bannerStyle', 'warning');
 
 
-      return Redirect::action('RoomController@index');
-
+        return Redirect::action('RoomController@index');
     }
 }
