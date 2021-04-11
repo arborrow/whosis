@@ -53,7 +53,6 @@ class RoleController extends Controller
         $role->save();
 
         \Session::flash('flash.banner', $role->name. ' ' . __('saved'));
-        \Session::flash('flash.bannerStyle', 'success');
 
         return Redirect::action('RoleController@index');
     }

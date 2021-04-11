@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\StorePermissionRequest;
+use App\Http\Requests\UpdatePermissionRequest;
 
 class PermissionController extends Controller
 {
@@ -15,7 +17,7 @@ class PermissionController extends Controller
 
     public function index(Request $request)
     {
-        $this->authorize('show-permission');
+        // $this->authorize('show-permission');
         $actions = [
             '' => 'N/A',
             'create'=>'create',
@@ -27,33 +29,14 @@ class PermissionController extends Controller
         // TODO: generate this list by getting a list of all the models on the project - email, phone do not have independent controllers (yet)
         $models = [
             '' => 'N/A',
-            'address'=>'address',
-            'asset'=>'asset',
-            'asset-type'=>'asset-type',
-            'attachment'=>'attachment',
-            'contact'=>'contact',
-            'department'=>'department',
-            'donation'=>'donation',
-            'donation-type'=>'donation-type',
-            'email'=>'email',
-            'group'=>'group',
-            'location'=>'location',
-            'note'=>'note',
-            'payment'=>'payment',
-            'permission'=>'permission',
-            'phone'=>'phone',
-            'registration'=>'registration',
-            'relationship'=>'relationship',
-            'reservation'=>'reservation',
-            'retreat'=>'retreat',
-            'role'=>'role',
+            'school'=>'school',
             'room'=>'room',
-            'snippet'=>'snippet',
-            'touchpoint'=>'touchpoint',
-            'uom'=>'uom',
+            'student'=>'student',
+            'course'=>'course',
+            'teacher'=>'teacher',
             'user'=>'user',
-            'website'=>'website',
-
+            'role'=>'role',
+            'permission'=>'permission',
         ];
         if (empty($request->input('term'))) {
             $term = $request->input('action').'-'.$request->input('model');
@@ -61,9 +44,9 @@ class PermissionController extends Controller
             $term = $request->input('term');
         }
         if (empty($term)) {
-            $permissions = \App\Models\Permission::orderBy('name')->get();
+            $permissions = \App\Models\Permission::orderBy('name')->paginate();
         } else {
-            $permissions = \App\Models\Permission::orderBy('name')->where('name', 'like', '%'.$term.'%')->get();
+            $permissions = \App\Models\Permission::orderBy('name')->where('name', 'like', '%'.$term.'%')->paginate();
         }
 
         return view('admin.permissions.index', compact('permissions', 'actions', 'models'));
@@ -76,7 +59,7 @@ class PermissionController extends Controller
      */
     public function create()
     {
-        $this->authorize('create-permission');
+        // $this->authorize('create-permission');
 
         return view('admin.permissions.create');
     }
@@ -87,16 +70,17 @@ class PermissionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StorePermissionRequest $request)
     {
-        $this->authorize('create-permission');
+        // $this->authorize('create-permission');
+
         $permission = new \App\Models\Permission;
         $permission->name = $request->input('name');
         $permission->display_name = $request->input('display_name');
         $permission->description = $request->input('description');
         $permission->save();
 
-        flash('Permission: <a href="'.url('/admin/permission/'.$permission->id).'">'.$permission->name.'</a> added')->success();
+        \Session::flash('flash.banner', $permission->name. ' ' . __('saved'));
 
         return Redirect::action('PermissionController@index');
     }
@@ -109,7 +93,7 @@ class PermissionController extends Controller
      */
     public function show($id)
     {
-        $this->authorize('show-permission');
+        // $this->authorize('show-permission');
         $permission = \App\Models\Permission::with('roles.users')->findOrFail($id);
         $roles = \App\Models\Role::orderBy('name')->pluck('name', 'id');
 
@@ -124,7 +108,7 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
-        $this->authorize('update-permission');
+        // $this->authorize('update-permission');
         $permission = \App\Models\Permission::findOrFail($id);
 
         return view('admin.permissions.edit', compact('permission'));
@@ -137,16 +121,17 @@ class PermissionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdatePermissionRequest $request, $id)
     {
-        $this->authorize('update-permission');
+        // $this->authorize('update-permission');
         $permission = \App\Models\Permission::findOrFail($request->input('id'));
         $permission->name = $request->input('name');
         $permission->display_name = $request->input('display_name');
         $permission->description = $request->input('description');
         $permission->save();
 
-        flash('Permission: <a href="'.url('/admin/permission/'.$permission->id).'">'.$permission->name.'</a> updated')->success();
+        \Session::flash('flash.banner', $permission->name. ' ' . __('updated'));
+
 
         return Redirect::action('PermissionController@index');
     }
@@ -159,26 +144,27 @@ class PermissionController extends Controller
      */
     public function destroy($id)
     {
-        $this->authorize('delete-permission');
+        // $this->authorize('delete-permission');
 
         $permission = \App\Models\Permission::findOrFail($id);
 
         \App\Models\Permission::destroy($id);
 
-        flash('Permission: '.$permission->name.' deleted')->warning()->important();
+        \Session::flash('flash.banner', $permission->name. ' ' . __('deleted'));
+        \Session::flash('flash.bannerStyle', 'warning');
 
         return Redirect::action('PermissionController@index');
     }
 
     public function update_roles(Request $request)
     {
-        $this->authorize('update-permission');
+        // $this->authorize('update-permission');
         $this->authorize('update-role');
         $permission = \App\Models\Permission::findOrFail($request->input('id'));
         $permission->roles()->detach();
         $permission->roles()->sync($request->input('roles'));
 
-        flash('Role assignments for permission: <a href="'.url('/admin/permission/'.$permission->id).'">'.$permission->name.'</a> updated')->success();
+        \Session::flash('flash.banner', 'Role assignments for permission: '.$permission->name. ' ' . __('updated'));
 
         return Redirect::action('PermissionController@index');
     }
