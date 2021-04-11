@@ -5,7 +5,7 @@
 
     <x-slot name="header">
         <div class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create Role') }}
+            {{ __('Create role') }}
             <x-jet-button form="save">
                 {{ __('Save') }}
             </x-jet-button>

@@ -15,9 +15,9 @@
         </div>
         @else
         <x-form :action="route('permission.index')" id="permission_index" method="GET" class="flex flex-row mb-4">
-                <x-form-select name="action" :label="__('Action')" :options=$actions class="max-w-md  pl-4" />
-                <x-form-select name="model" :label="__('Model')" :options=$models class="max-w-md  pl-4" />
-                <x-form-submit class="mb-4  pl-4">Search</x-form-submit>
+            <x-form-select name="action" :label="__('Action')" :options=$actions />
+            <x-form-select name="model" :label="__('Model')" :options=$models />
+            <x-form-submit>Search</x-form-submit>
         </x-form>
 
         <table class="table-auto min-w-max w-full">

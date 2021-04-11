@@ -22,7 +22,7 @@
 
 		<x-form :action="route('admin.role.update_permissions')" id="update_permissions" method="POST">
 			<x-form-input name="id" type="hidden" :value="$role->id" />
-			<x-form-select name="permissions" :options="$permissions" label="Permissions for:" :default="$role->permissions->pluck('id')->toArray()" multiple />
+			<x-form-select name="permissions[]" :options="$permissions" label="Permissions for:" :default="$role->permissions->pluck('id')->toArray()" multiple />
 			<x-form-submit>Update permissions</x-form-submit>
 		</x-form>
 
@@ -30,7 +30,7 @@
 
 		<x-form :action="route('admin.role.update_users')" id="update_users" method="POST">
 			<x-form-input name="id" type="hidden" :value="$role->id" />
-			<x-form-select name="users" :options="$users" label="Users for:" :default="$role->users->pluck('id')->toArray()" multiple />
+			<x-form-select name="users[]" :options="$users" label="Users for:" :default="$role->users->pluck('id')->toArray()" multiple />
 			<x-form-submit>Update users</x-form-submit>
 		</x-form>
 
