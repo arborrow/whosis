@@ -8,9 +8,9 @@
     </div>
 
     <div class="mt-6 text-gray-500">
-        WhoSIS is a Student Information System loosely based upon OpenSIS built with Laravel Jetstream, Livewire and Tailwind CSS.
+        WhoSIS is the World's Handy Open Student Information System loosely based upon OpenSIS built with Laravel, Jetstream, Livewire and Tailwind CSS.
         We believe you should be able to focus on your students rather than the technology to keep track of them.
-        We hope you love it.
+        WhoSIS is for educators that give a hoot. We hope you love it.
     </div>
 </div>
 

@@ -49,6 +49,7 @@ Route::post('admin/role/update_users', 'RoleController@update_users')->name('adm
 
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('phpinfo', 'AdminController@phpinfo')->name('phpinfo');
+    Route::resource('currency', 'CurrencyController');
     Route::resource('permission', 'PermissionController');
     Route::resource('role', 'RoleController');
     Route::resource('user', 'UserController');

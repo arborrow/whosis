@@ -22,6 +22,8 @@
                     <x-nav-link-parent :href="'admin'" :active="request()->routeIs('admin')">
                         <x-slot name="name">Admin</x-slot>
                         <x-slot name="children">
+                            <a href="{{ route('currency.index') }}">{{ __('Currencies') }}</a>
+                            <span class="separator"></span>
                             <a href="{{ route('permission.index') }}">{{ __('Permissions') }}</a>
                             <a href="{{ route('role.index') }}">{{ __('Roles') }}</a>
                             <a href="{{ route('user.index') }}">{{ __('Users') }}</a>
@@ -170,6 +172,8 @@
             <x-responsive-nav-link-parent :href="'admin'" :active="request()->routeIs('admin.*')">
                 <x-slot name="name">Admin</x-slot>
                 <x-slot name="children">
+                    <a href="{{ route('currency.index') }}">{{ __('Currencies') }}</a>
+                    <span class="separator"></span>
                     <a href="{{ route('permission.index') }}">{{ __('Permissions') }}</a>
                     <a href="{{ route('role.index') }}">{{ __('Roles') }}</a>
                     <a href="{{ route('user.index') }}">{{ __('Users') }}</a>

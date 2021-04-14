@@ -5,7 +5,6 @@ use Illuminate\Database\Seeder;
 
 class CurrencyTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -13,3524 +12,3236 @@ class CurrencyTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('currency')->delete();
-        
-        \DB::table('currency')->insert(array (
-            0 => 
-            array (
+        \DB::table('currency')->insert(array(
+            0 =>
+            array(
                 'id' => 1,
                 'country_name' => 'Afghanistan',
-                'currency' => 'Afghani',
+                'currency_name' => 'Afghani',
                 'currency_code' => 'AFN',
                 'currency_numeric_code' => '971',
                 'currency_decimals' => '2',
                 'currency_symbol' => '؋',
-                'fund' => '',
                 'iso_code' => 'AF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            1 => 
-            array (
+            1 =>
+            array(
                 'id' => 2,
                 'country_name' => 'Åland Islands',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'AX',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            2 => 
-            array (
+            2 =>
+            array(
                 'id' => 3,
                 'country_name' => 'Albania',
-                'currency' => 'Lek',
+                'currency_name' => 'Lek',
                 'currency_code' => 'ALL',
                 'currency_numeric_code' => '008',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Lek',
-                'fund' => '',
                 'iso_code' => 'AL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            3 => 
-            array (
+            3 =>
+            array(
                 'id' => 4,
                 'country_name' => 'Algeria',
-                'currency' => 'Algerian Dinar',
+                'currency_name' => 'Algerian Dinar',
                 'currency_code' => 'DZD',
                 'currency_numeric_code' => '012',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'دج',
-                'fund' => '',
                 'iso_code' => 'DZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            4 => 
-            array (
+            4 =>
+            array(
                 'id' => 5,
                 'country_name' => 'American Samoa',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'AS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            5 => 
-            array (
+            5 =>
+            array(
                 'id' => 6,
                 'country_name' => 'Andorra',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'AD',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            6 => 
-            array (
+            6 =>
+            array(
                 'id' => 7,
                 'country_name' => 'Angola',
-                'currency' => 'Kwanza',
+                'currency_name' => 'Kwanza',
                 'currency_code' => 'AOA',
                 'currency_numeric_code' => '973',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Kz',
-                'fund' => '',
                 'iso_code' => 'AO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            7 => 
-            array (
+            7 =>
+            array(
                 'id' => 8,
                 'country_name' => 'Anguilla',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'AI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            8 => 
-            array (
+            8 =>
+            array(
                 'id' => 10,
                 'country_name' => 'Antigua and Barbuda',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'AG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            9 => 
-            array (
+            9 =>
+            array(
                 'id' => 11,
                 'country_name' => 'Argentina',
-                'currency' => 'Argentine Peso',
+                'currency_name' => 'Argentine Peso',
                 'currency_code' => 'ARS',
                 'currency_numeric_code' => '032',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'AR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            10 => 
-            array (
+            10 =>
+            array(
                 'id' => 12,
                 'country_name' => 'Armenia',
-                'currency' => 'Armenian Dram',
+                'currency_name' => 'Armenian Dram',
                 'currency_code' => 'AMD',
                 'currency_numeric_code' => '051',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Դ',
-                'fund' => '',
                 'iso_code' => 'AM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            11 => 
-            array (
+            11 =>
+            array(
                 'id' => 13,
                 'country_name' => 'Aruba',
-                'currency' => 'Aruban Florin',
+                'currency_name' => 'Aruban Florin',
                 'currency_code' => 'AWG',
                 'currency_numeric_code' => '533',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'ƒ',
-                'fund' => '',
                 'iso_code' => 'AW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            12 => 
-            array (
+            12 =>
+            array(
                 'id' => 14,
                 'country_name' => 'Australia',
-                'currency' => 'Australian Dollar',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'AU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            13 => 
-            array (
+            13 =>
+            array(
                 'id' => 15,
                 'country_name' => 'Austria',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'AT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            14 => 
-            array (
+            14 =>
+            array(
                 'id' => 16,
                 'country_name' => 'Azerbaijan',
-                'currency' => 'Azerbaijan Manat',
+                'currency_name' => 'Azerbaijan Manat',
                 'currency_code' => 'AZN',
                 'currency_numeric_code' => '944',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₼',
-                'fund' => '',
                 'iso_code' => 'AZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            15 => 
-            array (
+            15 =>
+            array(
                 'id' => 17,
                 'country_name' => 'Bahamas',
-                'currency' => 'Bahamian Dollar',
+                'currency_name' => 'Bahamian Dollar',
                 'currency_code' => 'BSD',
                 'currency_numeric_code' => '044',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'BS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            16 => 
-            array (
+            16 =>
+            array(
                 'id' => 18,
                 'country_name' => 'Bahrain',
-                'currency' => 'Bahraini Dinar',
+                'currency_name' => 'Bahraini Dinar',
                 'currency_code' => 'BHD',
                 'currency_numeric_code' => '048',
                 'currency_decimals' => '3',
                 'currency_symbol' => '.د.ب',
-                'fund' => '',
                 'iso_code' => 'BH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            17 => 
-            array (
+            17 =>
+            array(
                 'id' => 19,
                 'country_name' => 'Bangladesh',
-                'currency' => 'Taka',
+                'currency_name' => 'Taka',
                 'currency_code' => 'BDT',
                 'currency_numeric_code' => '050',
                 'currency_decimals' => '2',
                 'currency_symbol' => '৳',
-                'fund' => '',
                 'iso_code' => 'BD',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            18 => 
-            array (
+            18 =>
+            array(
                 'id' => 20,
                 'country_name' => 'Barbados',
-                'currency' => 'Barbados Dollar',
+                'currency_name' => 'Barbados Dollar',
                 'currency_code' => 'BBD',
                 'currency_numeric_code' => '052',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'BB',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            19 => 
-            array (
+            19 =>
+            array(
                 'id' => 21,
                 'country_name' => 'Belarus',
-                'currency' => 'Belarusian Ruble',
+                'currency_name' => 'Belarusian Ruble',
                 'currency_code' => 'BYN',
                 'currency_numeric_code' => '933',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Br',
-                'fund' => '',
                 'iso_code' => 'BY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            20 => 
-            array (
+            20 =>
+            array(
                 'id' => 22,
                 'country_name' => 'Belgium',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'BE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            21 => 
-            array (
+            21 =>
+            array(
                 'id' => 23,
                 'country_name' => 'Belize',
-                'currency' => 'Belize Dollar',
+                'currency_name' => 'Belize Dollar',
                 'currency_code' => 'BZD',
                 'currency_numeric_code' => '084',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'BZ$',
-                'fund' => '',
                 'iso_code' => 'BZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            22 => 
-            array (
+            22 =>
+            array(
                 'id' => 24,
                 'country_name' => 'Benin',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'CFA',
-                'fund' => '',
                 'iso_code' => 'BJ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            23 => 
-            array (
+            23 =>
+            array(
                 'id' => 25,
                 'country_name' => 'Bermuda',
-                'currency' => 'Bermudian Dollar',
+                'currency_name' => 'Bermudian Dollar',
                 'currency_code' => 'BMD',
                 'currency_numeric_code' => '060',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'BM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            24 => 
-            array (
+            24 =>
+            array(
                 'id' => 26,
                 'country_name' => 'Bhutan',
-                'currency' => 'Indian Rupee',
+                'currency_name' => 'Indian Rupee',
                 'currency_code' => 'INR',
                 'currency_numeric_code' => '356',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₹',
-                'fund' => '',
-                'iso_code' => NULL,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 11:55:44',
             ),
-            25 => 
-            array (
+            25 =>
+            array(
                 'id' => 27,
                 'country_name' => 'Bhutan',
-                'currency' => 'Ngultrum',
+                'currency_name' => 'Ngultrum',
                 'currency_code' => 'BTN',
                 'currency_numeric_code' => '064',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Nu.',
-                'fund' => '',
                 'iso_code' => 'BT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            26 => 
-            array (
+            26 =>
+            array(
                 'id' => 28,
                 'country_name' => 'Bolivia, Plurinational State of',
-                'currency' => 'Boliviano',
+                'currency_name' => 'Boliviano',
                 'currency_code' => 'BOB',
                 'currency_numeric_code' => '068',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$b',
-                'fund' => '',
                 'iso_code' => 'BO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            27 => 
-            array (
+            27 =>
+            array(
                 'id' => 29,
-            'country_name' => 'Bolivia (Plurinational State Of)',
-                'currency' => 'Mvdol',
+                'country_name' => 'Bolivia (Plurinational State Of)',
+                'currency_name' => 'Mvdol',
                 'currency_code' => 'BOV',
                 'currency_numeric_code' => '984',
                 'currency_decimals' => '2',
-                'currency_symbol' => NULL,
-                'fund' => '1',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 11:56:00',
             ),
-            28 => 
-            array (
+            28 =>
+            array(
                 'id' => 30,
                 'country_name' => 'Bonaire, Sint Eustatius And Saba',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'BQ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            29 => 
-            array (
+            29 =>
+            array(
                 'id' => 31,
                 'country_name' => 'Bosnia And Herzegovina',
-                'currency' => 'Convertible Mark',
+                'currency_name' => 'Convertible Mark',
                 'currency_code' => 'BAM',
                 'currency_numeric_code' => '977',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'KM',
-                'fund' => '',
                 'iso_code' => 'BA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            30 => 
-            array (
+            30 =>
+            array(
                 'id' => 32,
                 'country_name' => 'Botswana',
-                'currency' => 'Pula',
+                'currency_name' => 'Pula',
                 'currency_code' => 'BWP',
                 'currency_numeric_code' => '072',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'P',
-                'fund' => '',
                 'iso_code' => 'BW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            31 => 
-            array (
+            31 =>
+            array(
                 'id' => 33,
                 'country_name' => 'Bouvet Island',
-                'currency' => 'Norwegian Krone',
+                'currency_name' => 'Norwegian Krone',
                 'currency_code' => 'NOK',
                 'currency_numeric_code' => '578',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'BV',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            32 => 
-            array (
+            32 =>
+            array(
                 'id' => 34,
                 'country_name' => 'Brazil',
-                'currency' => 'Brazilian Real',
+                'currency_name' => 'Brazilian Real',
                 'currency_code' => 'BRL',
                 'currency_numeric_code' => '986',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'R$',
-                'fund' => '',
                 'iso_code' => 'BR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            33 => 
-            array (
+            33 =>
+            array(
                 'id' => 35,
                 'country_name' => 'British Indian Ocean Territory',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'IO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            34 => 
-            array (
+            34 =>
+            array(
                 'id' => 36,
                 'country_name' => 'Brunei Darussalam',
-                'currency' => 'Brunei Dollar',
+                'currency_name' => 'Brunei Dollar',
                 'currency_code' => 'BND',
                 'currency_numeric_code' => '096',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'BN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            35 => 
-            array (
+            35 =>
+            array(
                 'id' => 37,
                 'country_name' => 'Bulgaria',
-                'currency' => 'Bulgarian Lev',
+                'currency_name' => 'Bulgarian Lev',
                 'currency_code' => 'BGN',
                 'currency_numeric_code' => '975',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'лв',
-                'fund' => '',
                 'iso_code' => 'BG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            36 => 
-            array (
+            36 =>
+            array(
                 'id' => 38,
                 'country_name' => 'Burkina Faso',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'CFA',
-                'fund' => '',
                 'iso_code' => 'BF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            37 => 
-            array (
+            37 =>
+            array(
                 'id' => 39,
                 'country_name' => 'Burundi',
-                'currency' => 'Burundi Franc',
+                'currency_name' => 'Burundi Franc',
                 'currency_code' => 'BIF',
                 'currency_numeric_code' => '108',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'FBu',
-                'fund' => '',
                 'iso_code' => 'BI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            38 => 
-            array (
+            38 =>
+            array(
                 'id' => 40,
                 'country_name' => 'Cape Verde',
-                'currency' => 'Cabo Verde Escudo',
+                'currency_name' => 'Cabo Verde Escudo',
                 'currency_code' => 'CVE',
                 'currency_numeric_code' => '132',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CV',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            39 => 
-            array (
+            39 =>
+            array(
                 'id' => 41,
                 'country_name' => 'Cambodia',
-                'currency' => 'Riel',
+                'currency_name' => 'Riel',
                 'currency_code' => 'KHR',
                 'currency_numeric_code' => '116',
                 'currency_decimals' => '2',
                 'currency_symbol' => '៛',
-                'fund' => '',
                 'iso_code' => 'KH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            40 => 
-            array (
+            40 =>
+            array(
                 'id' => 42,
                 'country_name' => 'Cameroon',
-                'currency' => 'CFA Franc BEAC',
+                'currency_name' => 'CFA Franc BEAC',
                 'currency_code' => 'XAF',
                 'currency_numeric_code' => '950',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'CM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            41 => 
-            array (
+            41 =>
+            array(
                 'id' => 43,
                 'country_name' => 'Canada',
-                'currency' => 'Canadian Dollar',
+                'currency_name' => 'Canadian Dollar',
                 'currency_code' => 'CAD',
                 'currency_numeric_code' => '124',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            42 => 
-            array (
+            42 =>
+            array(
                 'id' => 44,
                 'country_name' => 'Cayman Islands',
-                'currency' => 'Cayman Islands Dollar',
+                'currency_name' => 'Cayman Islands Dollar',
                 'currency_code' => 'KYD',
                 'currency_numeric_code' => '136',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'KY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            43 => 
-            array (
+            43 =>
+            array(
                 'id' => 45,
                 'country_name' => 'Central African Republic',
-                'currency' => 'CFA Franc BEAC',
+                'currency_name' => 'CFA Franc BEAC',
                 'currency_code' => 'XAF',
                 'currency_numeric_code' => '950',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'CF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            44 => 
-            array (
+            44 =>
+            array(
                 'id' => 46,
                 'country_name' => 'Chad',
-                'currency' => 'CFA Franc BEAC',
+                'currency_name' => 'CFA Franc BEAC',
                 'currency_code' => 'XAF',
                 'currency_numeric_code' => '950',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'TD',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            45 => 
-            array (
+            45 =>
+            array(
                 'id' => 47,
                 'country_name' => 'Chile',
-                'currency' => 'Chilean Peso',
+                'currency_name' => 'Chilean Peso',
                 'currency_code' => 'CLP',
                 'currency_numeric_code' => '152',
                 'currency_decimals' => '0',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            46 => 
-            array (
+            46 =>
+            array(
                 'id' => 48,
                 'country_name' => 'Chile',
-                'currency' => 'Unidad de Fomento',
+                'currency_name' => 'Unidad de Fomento',
                 'currency_code' => 'CLF',
                 'currency_numeric_code' => '990',
                 'currency_decimals' => '4',
                 'currency_symbol' => 'CLF',
-                'fund' => '1',
                 'iso_code' => 'CL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            47 => 
-            array (
+            47 =>
+            array(
                 'id' => 49,
                 'country_name' => 'China',
-                'currency' => 'Yuan Renminbi',
+                'currency_name' => 'Yuan Renminbi',
                 'currency_code' => 'CNY',
                 'currency_numeric_code' => '156',
                 'currency_decimals' => '2',
                 'currency_symbol' => '¥',
-                'fund' => '',
                 'iso_code' => 'CN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            48 => 
-            array (
+            48 =>
+            array(
                 'id' => 50,
                 'country_name' => 'Christmas Island',
-                'currency' => 'Australian Dollar',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CX',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            49 => 
-            array (
+            49 =>
+            array(
                 'id' => 51,
-            'country_name' => 'Cocos (Keeling) Islands',
-                'currency' => 'Australian Dollar',
+                'country_name' => 'Cocos (Keeling) Islands',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            50 => 
-            array (
+            50 =>
+            array(
                 'id' => 52,
                 'country_name' => 'Colombia',
-                'currency' => 'Colombian Peso',
+                'currency_name' => 'Colombian Peso',
                 'currency_code' => 'COP',
                 'currency_numeric_code' => '170',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            51 => 
-            array (
+            51 =>
+            array(
                 'id' => 53,
                 'country_name' => 'Colombia',
-                'currency' => 'Unidad de Valor Real',
+                'currency_name' => 'Unidad de Valor Real',
                 'currency_code' => 'COU',
                 'currency_numeric_code' => '970',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'COU',
-                'fund' => '1',
                 'iso_code' => 'CO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            52 => 
-            array (
+            52 =>
+            array(
                 'id' => 54,
                 'country_name' => 'Comoros',
-                'currency' => 'Comorian Franc ',
+                'currency_name' => 'Comorian Franc ',
                 'currency_code' => 'KMF',
                 'currency_numeric_code' => '174',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'CF',
-                'fund' => '',
                 'iso_code' => 'KM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            53 => 
-            array (
+            53 =>
+            array(
                 'id' => 55,
                 'country_name' => 'Congo, the Democratic Republic of the',
-                'currency' => 'Congolese Franc',
+                'currency_name' => 'Congolese Franc',
                 'currency_code' => 'CDF',
                 'currency_numeric_code' => '976',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'FC',
-                'fund' => '',
                 'iso_code' => 'CD',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            54 => 
-            array (
+            54 =>
+            array(
                 'id' => 56,
                 'country_name' => 'Congo',
-                'currency' => 'CFA Franc BEAC',
+                'currency_name' => 'CFA Franc BEAC',
                 'currency_code' => 'XAF',
                 'currency_numeric_code' => '950',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'CG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            55 => 
-            array (
+            55 =>
+            array(
                 'id' => 57,
                 'country_name' => 'Cook Islands',
-                'currency' => 'New Zealand Dollar',
+                'currency_name' => 'New Zealand Dollar',
                 'currency_code' => 'NZD',
                 'currency_numeric_code' => '554',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            56 => 
-            array (
+            56 =>
+            array(
                 'id' => 58,
                 'country_name' => 'Costa Rica',
-                'currency' => 'Costa Rican Colon',
+                'currency_name' => 'Costa Rican Colon',
                 'currency_code' => 'CRC',
                 'currency_numeric_code' => '188',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₡',
-                'fund' => '',
                 'iso_code' => 'CR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            57 => 
-            array (
+            57 =>
+            array(
                 'id' => 59,
                 'country_name' => 'Côte D\'ivoire',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'CI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            58 => 
-            array (
+            58 =>
+            array(
                 'id' => 60,
                 'country_name' => 'Croatia',
-                'currency' => 'Kuna',
+                'currency_name' => 'Kuna',
                 'currency_code' => 'HRK',
                 'currency_numeric_code' => '191',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kn',
-                'fund' => '',
                 'iso_code' => 'HR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            59 => 
-            array (
+            59 =>
+            array(
                 'id' => 61,
                 'country_name' => 'Cuba',
-                'currency' => 'Cuban Peso',
+                'currency_name' => 'Cuban Peso',
                 'currency_code' => 'CUP',
                 'currency_numeric_code' => '192',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₱',
-                'fund' => '',
                 'iso_code' => 'CU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            60 => 
-            array (
+            60 =>
+            array(
                 'id' => 62,
                 'country_name' => 'Cuba',
-                'currency' => 'Peso Convertible',
+                'currency_name' => 'Peso Convertible',
                 'currency_code' => 'CUC',
                 'currency_numeric_code' => '931',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'CU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            61 => 
-            array (
+            61 =>
+            array(
                 'id' => 63,
                 'country_name' => 'Curaçao',
-                'currency' => 'Netherlands Antillean Guilder',
+                'currency_name' => 'Netherlands Antillean Guilder',
                 'currency_code' => 'ANG',
                 'currency_numeric_code' => '532',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'ƒ',
-                'fund' => '',
                 'iso_code' => 'CW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            62 => 
-            array (
+            62 =>
+            array(
                 'id' => 64,
                 'country_name' => 'Cyprus',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'CY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            63 => 
-            array (
+            63 =>
+            array(
                 'id' => 65,
                 'country_name' => 'Czech Republic',
-                'currency' => 'Czech Koruna',
+                'currency_name' => 'Czech Koruna',
                 'currency_code' => 'CZK',
                 'currency_numeric_code' => '203',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Kč',
-                'fund' => '',
                 'iso_code' => 'CZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            64 => 
-            array (
+            64 =>
+            array(
                 'id' => 66,
                 'country_name' => 'Denmark',
-                'currency' => 'Danish Krone',
+                'currency_name' => 'Danish Krone',
                 'currency_code' => 'DKK',
                 'currency_numeric_code' => '208',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'DK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            65 => 
-            array (
+            65 =>
+            array(
                 'id' => 67,
                 'country_name' => 'Djibouti',
-                'currency' => 'Djibouti Franc',
+                'currency_name' => 'Djibouti Franc',
                 'currency_code' => 'DJF',
                 'currency_numeric_code' => '262',
                 'currency_decimals' => '0',
                 'currency_symbol' => '₣',
-                'fund' => '',
                 'iso_code' => 'DJ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            66 => 
-            array (
+            66 =>
+            array(
                 'id' => 68,
                 'country_name' => 'Dominica',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'DM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            67 => 
-            array (
+            67 =>
+            array(
                 'id' => 69,
                 'country_name' => 'Dominican Republic',
-                'currency' => 'Dominican Peso',
+                'currency_name' => 'Dominican Peso',
                 'currency_code' => 'DOP',
                 'currency_numeric_code' => '214',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'RD$',
-                'fund' => '',
                 'iso_code' => 'DO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            68 => 
-            array (
+            68 =>
+            array(
                 'id' => 70,
                 'country_name' => 'Ecuador',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'EC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            69 => 
-            array (
+            69 =>
+            array(
                 'id' => 71,
                 'country_name' => 'Egypt',
-                'currency' => 'Egyptian Pound',
+                'currency_name' => 'Egyptian Pound',
                 'currency_code' => 'EGP',
                 'currency_numeric_code' => '818',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'EG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            70 => 
-            array (
+            70 =>
+            array(
                 'id' => 72,
                 'country_name' => 'El Salvador',
-                'currency' => 'El Salvador Colon',
+                'currency_name' => 'El Salvador Colon',
                 'currency_code' => 'SVC',
                 'currency_numeric_code' => '222',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'SV',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            71 => 
-            array (
+            71 =>
+            array(
                 'id' => 73,
                 'country_name' => 'El Salvador',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'SV',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            72 => 
-            array (
+            72 =>
+            array(
                 'id' => 74,
                 'country_name' => 'Equatorial Guinea',
-                'currency' => 'CFA Franc BEAC',
+                'currency_name' => 'CFA Franc BEAC',
                 'currency_code' => 'XAF',
                 'currency_numeric_code' => '950',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'GQ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            73 => 
-            array (
+            73 =>
+            array(
                 'id' => 75,
                 'country_name' => 'Eritrea',
-                'currency' => 'Nakfa',
+                'currency_name' => 'Nakfa',
                 'currency_code' => 'ERN',
                 'currency_numeric_code' => '232',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Nfk',
-                'fund' => '',
                 'iso_code' => 'ER',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            74 => 
-            array (
+            74 =>
+            array(
                 'id' => 76,
                 'country_name' => 'Estonia',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'EE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            75 => 
-            array (
+            75 =>
+            array(
                 'id' => 77,
                 'country_name' => 'Swaziland',
-                'currency' => 'Lilangeni',
+                'currency_name' => 'Lilangeni',
                 'currency_code' => 'SZL',
                 'currency_numeric_code' => '748',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'L',
-                'fund' => '',
                 'iso_code' => 'SZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            76 => 
-            array (
+            76 =>
+            array(
                 'id' => 78,
                 'country_name' => 'Ethiopia',
-                'currency' => 'Ethiopian Birr',
+                'currency_name' => 'Ethiopian Birr',
                 'currency_code' => 'ETB',
                 'currency_numeric_code' => '230',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Br',
-                'fund' => '',
                 'iso_code' => 'ET',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            77 => 
-            array (
+            77 =>
+            array(
                 'id' => 79,
                 'country_name' => 'European Union',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
-                'iso_code' => NULL,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 12:10:15',
             ),
-            78 => 
-            array (
+            78 =>
+            array(
                 'id' => 80,
             'country_name' => 'Falkland Islands (Malvinas)',
-                'currency' => 'Falkland Islands Pound',
+                'currency_name' => 'Falkland Islands Pound',
                 'currency_code' => 'FKP',
                 'currency_numeric_code' => '238',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'FK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            79 => 
-            array (
+            79 =>
+            array(
                 'id' => 81,
                 'country_name' => 'Faroe Islands',
-                'currency' => 'Danish Krone',
+                'currency_name' => 'Danish Krone',
                 'currency_code' => 'DKK',
                 'currency_numeric_code' => '208',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'FO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            80 => 
-            array (
+            80 =>
+            array(
                 'id' => 82,
                 'country_name' => 'Fiji',
-                'currency' => 'Fiji Dollar',
+                'currency_name' => 'Fiji Dollar',
                 'currency_code' => 'FJD',
                 'currency_numeric_code' => '242',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'FJ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            81 => 
-            array (
+            81 =>
+            array(
                 'id' => 83,
                 'country_name' => 'Finland',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'FI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            82 => 
-            array (
+            82 =>
+            array(
                 'id' => 84,
                 'country_name' => 'France',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'FR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            83 => 
-            array (
+            83 =>
+            array(
                 'id' => 85,
                 'country_name' => 'French Guiana',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'GF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            84 => 
-            array (
+            84 =>
+            array(
                 'id' => 86,
                 'country_name' => 'French Polynesia',
-                'currency' => 'CFP Franc',
+                'currency_name' => 'CFP Franc',
                 'currency_code' => 'XPF',
                 'currency_numeric_code' => '953',
                 'currency_decimals' => '0',
                 'currency_symbol' => '₣',
-                'fund' => '',
                 'iso_code' => 'PF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            85 => 
-            array (
+            85 =>
+            array(
                 'id' => 87,
                 'country_name' => 'French Southern Territories',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'TF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            86 => 
-            array (
+            86 =>
+            array(
                 'id' => 88,
                 'country_name' => 'Gabon',
-                'currency' => 'CFA Franc BEAC',
+                'currency_name' => 'CFA Franc BEAC',
                 'currency_code' => 'XAF',
                 'currency_numeric_code' => '950',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'GA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            87 => 
-            array (
+            87 =>
+            array(
                 'id' => 89,
                 'country_name' => 'Gambia',
-                'currency' => 'Dalasi',
+                'currency_name' => 'Dalasi',
                 'currency_code' => 'GMD',
                 'currency_numeric_code' => '270',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'D',
-                'fund' => '',
                 'iso_code' => 'GM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            88 => 
-            array (
+            88 =>
+            array(
                 'id' => 90,
                 'country_name' => 'Georgia',
-                'currency' => 'Lari',
+                'currency_name' => 'Lari',
                 'currency_code' => 'GEL',
                 'currency_numeric_code' => '981',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'ლ',
-                'fund' => '',
                 'iso_code' => 'GE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            89 => 
-            array (
+            89 =>
+            array(
                 'id' => 91,
                 'country_name' => 'Germany',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'DE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            90 => 
-            array (
+            90 =>
+            array(
                 'id' => 92,
                 'country_name' => 'Ghana',
-                'currency' => 'Ghana Cedi',
+                'currency_name' => 'Ghana Cedi',
                 'currency_code' => 'GHS',
                 'currency_numeric_code' => '936',
                 'currency_decimals' => '2',
                 'currency_symbol' => '¢',
-                'fund' => '',
                 'iso_code' => 'GH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            91 => 
-            array (
+            91 =>
+            array(
                 'id' => 93,
                 'country_name' => 'Gibraltar',
-                'currency' => 'Gibraltar Pound',
+                'currency_name' => 'Gibraltar Pound',
                 'currency_code' => 'GIP',
                 'currency_numeric_code' => '292',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'GI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            92 => 
-            array (
+            92 =>
+            array(
                 'id' => 94,
                 'country_name' => 'Greece',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'GR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            93 => 
-            array (
+            93 =>
+            array(
                 'id' => 95,
                 'country_name' => 'Greenland',
-                'currency' => 'Danish Krone',
+                'currency_name' => 'Danish Krone',
                 'currency_code' => 'DKK',
                 'currency_numeric_code' => '208',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'GL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            94 => 
-            array (
+            94 =>
+            array(
                 'id' => 96,
                 'country_name' => 'Grenada',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'GD',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            95 => 
-            array (
+            95 =>
+            array(
                 'id' => 97,
                 'country_name' => 'Guadeloupe',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'GP',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            96 => 
-            array (
+            96 =>
+            array(
                 'id' => 98,
                 'country_name' => 'Guam',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'GU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            97 => 
-            array (
+            97 =>
+            array(
                 'id' => 99,
                 'country_name' => 'Guatemala',
-                'currency' => 'Quetzal',
+                'currency_name' => 'Quetzal',
                 'currency_code' => 'GTQ',
                 'currency_numeric_code' => '320',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Q',
-                'fund' => '',
                 'iso_code' => 'GT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            98 => 
-            array (
+            98 =>
+            array(
                 'id' => 100,
                 'country_name' => 'Guernsey',
-                'currency' => 'Pound Sterling',
+                'currency_name' => 'Pound Sterling',
                 'currency_code' => 'GBP',
                 'currency_numeric_code' => '826',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'GG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            99 => 
-            array (
+            99 =>
+            array(
                 'id' => 101,
                 'country_name' => 'Guinea',
-                'currency' => 'Guinean Franc',
+                'currency_name' => 'Guinean Franc',
                 'currency_code' => 'GNF',
                 'currency_numeric_code' => '324',
                 'currency_decimals' => '0',
                 'currency_symbol' => '₣',
-                'fund' => '',
                 'iso_code' => 'GN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            100 => 
-            array (
+            100 =>
+            array(
                 'id' => 102,
                 'country_name' => 'Guinea-Bissau',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'GW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            101 => 
-            array (
+            101 =>
+            array(
                 'id' => 103,
                 'country_name' => 'Guyana',
-                'currency' => 'Guyana Dollar',
+                'currency_name' => 'Guyana Dollar',
                 'currency_code' => 'GYD',
                 'currency_numeric_code' => '328',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'GY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            102 => 
-            array (
+            102 =>
+            array(
                 'id' => 104,
                 'country_name' => 'Haiti',
-                'currency' => 'Gourde',
+                'currency_name' => 'Gourde',
                 'currency_code' => 'HTG',
                 'currency_numeric_code' => '332',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'G',
-                'fund' => '',
                 'iso_code' => 'HT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            103 => 
-            array (
+            103 =>
+            array(
                 'id' => 105,
                 'country_name' => 'Haiti',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'HT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            104 => 
-            array (
+            104 =>
+            array(
                 'id' => 106,
                 'country_name' => 'Heard Island And Mcdonald Islands',
-                'currency' => 'Australian Dollar',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'HM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            105 => 
-            array (
+            105 =>
+            array(
                 'id' => 107,
             'country_name' => 'Holy See (Vatican City State)',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'VA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            106 => 
-            array (
+            106 =>
+            array(
                 'id' => 108,
                 'country_name' => 'Honduras',
-                'currency' => 'Lempira',
+                'currency_name' => 'Lempira',
                 'currency_code' => 'HNL',
                 'currency_numeric_code' => '340',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'L',
-                'fund' => '',
                 'iso_code' => 'HN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            107 => 
-            array (
+            107 =>
+            array(
                 'id' => 109,
                 'country_name' => 'Hong Kong',
-                'currency' => 'Hong Kong Dollar',
+                'currency_name' => 'Hong Kong Dollar',
                 'currency_code' => 'HKD',
                 'currency_numeric_code' => '344',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'HK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            108 => 
-            array (
+            108 =>
+            array(
                 'id' => 110,
                 'country_name' => 'Hungary',
-                'currency' => 'Forint',
+                'currency_name' => 'Forint',
                 'currency_code' => 'HUF',
                 'currency_numeric_code' => '348',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Ft',
-                'fund' => '',
                 'iso_code' => 'HU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            109 => 
-            array (
+            109 =>
+            array(
                 'id' => 111,
                 'country_name' => 'Iceland',
-                'currency' => 'Iceland Krona',
+                'currency_name' => 'Iceland Krona',
                 'currency_code' => 'ISK',
                 'currency_numeric_code' => '352',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'IS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            110 => 
-            array (
+            110 =>
+            array(
                 'id' => 112,
                 'country_name' => 'India',
-                'currency' => 'Indian Rupee',
+                'currency_name' => 'Indian Rupee',
                 'currency_code' => 'INR',
                 'currency_numeric_code' => '356',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₹',
-                'fund' => '',
                 'iso_code' => 'IN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            111 => 
-            array (
+            111 =>
+            array(
                 'id' => 113,
                 'country_name' => 'Indonesia',
-                'currency' => 'Rupiah',
+                'currency_name' => 'Rupiah',
                 'currency_code' => 'IDR',
                 'currency_numeric_code' => '360',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Rp',
-                'fund' => '',
                 'iso_code' => 'ID',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            112 => 
-            array (
+            112 =>
+            array(
                 'id' => 114,
                 'country_name' => 'International Monetary Fund',
-            'currency' => 'SDR (Special Drawing Right)',
+            'currency_name' => 'SDR (Special Drawing Right)',
                 'currency_code' => 'XDR',
                 'currency_numeric_code' => '960',
                 'currency_decimals' => 'N.A.',
-                'currency_symbol' => NULL,
-                'fund' => '',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 12:12:07',
             ),
-            113 => 
-            array (
+            113 =>
+            array(
                 'id' => 115,
                 'country_name' => 'Iran, Islamic Republic of',
-                'currency' => 'Iranian Rial',
+                'currency_name' => 'Iranian Rial',
                 'currency_code' => 'IRR',
                 'currency_numeric_code' => '364',
                 'currency_decimals' => '2',
                 'currency_symbol' => '﷼',
-                'fund' => '',
                 'iso_code' => 'IR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            114 => 
-            array (
+            114 =>
+            array(
                 'id' => 116,
                 'country_name' => 'Iraq',
-                'currency' => 'Iraqi Dinar',
+                'currency_name' => 'Iraqi Dinar',
                 'currency_code' => 'IQD',
                 'currency_numeric_code' => '368',
                 'currency_decimals' => '3',
                 'currency_symbol' => 'د.ع',
-                'fund' => '',
                 'iso_code' => 'IQ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            115 => 
-            array (
+            115 =>
+            array(
                 'id' => 117,
                 'country_name' => 'Ireland',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'IE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            116 => 
-            array (
+            116 =>
+            array(
                 'id' => 118,
                 'country_name' => 'Isle Of Man',
-                'currency' => 'Pound Sterling',
+                'currency_name' => 'Pound Sterling',
                 'currency_code' => 'GBP',
                 'currency_numeric_code' => '826',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'IM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            117 => 
-            array (
+            117 =>
+            array(
                 'id' => 119,
                 'country_name' => 'Israel',
-                'currency' => 'New Israeli Sheqel',
+                'currency_name' => 'New Israeli Sheqel',
                 'currency_code' => 'ILS',
                 'currency_numeric_code' => '376',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₪',
-                'fund' => '',
                 'iso_code' => 'IL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            118 => 
-            array (
+            118 =>
+            array(
                 'id' => 120,
                 'country_name' => 'Italy',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'IT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            119 => 
-            array (
+            119 =>
+            array(
                 'id' => 121,
                 'country_name' => 'Jamaica',
-                'currency' => 'Jamaican Dollar',
+                'currency_name' => 'Jamaican Dollar',
                 'currency_code' => 'JMD',
                 'currency_numeric_code' => '388',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'J$',
-                'fund' => '',
                 'iso_code' => 'JM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            120 => 
-            array (
+            120 =>
+            array(
                 'id' => 122,
                 'country_name' => 'Japan',
-                'currency' => 'Yen',
+                'currency_name' => 'Yen',
                 'currency_code' => 'JPY',
                 'currency_numeric_code' => '392',
                 'currency_decimals' => '0',
                 'currency_symbol' => '¥',
-                'fund' => '',
                 'iso_code' => 'JP',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            121 => 
-            array (
+            121 =>
+            array(
                 'id' => 123,
                 'country_name' => 'Jersey',
-                'currency' => 'Pound Sterling',
+                'currency_name' => 'Pound Sterling',
                 'currency_code' => 'GBP',
                 'currency_numeric_code' => '826',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'JE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            122 => 
-            array (
+            122 =>
+            array(
                 'id' => 124,
                 'country_name' => 'Jordan',
-                'currency' => 'Jordanian Dinar',
+                'currency_name' => 'Jordanian Dinar',
                 'currency_code' => 'JOD',
                 'currency_numeric_code' => '400',
                 'currency_decimals' => '3',
                 'currency_symbol' => 'د.ا',
-                'fund' => '',
                 'iso_code' => 'JO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            123 => 
-            array (
+            123 =>
+            array(
                 'id' => 125,
                 'country_name' => 'Kazakhstan',
-                'currency' => 'Tenge',
+                'currency_name' => 'Tenge',
                 'currency_code' => 'KZT',
                 'currency_numeric_code' => '398',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'лв',
-                'fund' => '',
                 'iso_code' => 'KZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            124 => 
-            array (
+            124 =>
+            array(
                 'id' => 126,
                 'country_name' => 'Kenya',
-                'currency' => 'Kenyan Shilling',
+                'currency_name' => 'Kenyan Shilling',
                 'currency_code' => 'KES',
                 'currency_numeric_code' => '404',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Sh',
-                'fund' => '',
                 'iso_code' => 'KE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            125 => 
-            array (
+            125 =>
+            array(
                 'id' => 127,
                 'country_name' => 'Kiribati',
-                'currency' => 'Australian Dollar',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'KI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            126 => 
-            array (
+            126 =>
+            array(
                 'id' => 128,
                 'country_name' => 'Korea, Democratic People\'s Republic of',
-                'currency' => 'North Korean Won',
+                'currency_name' => 'North Korean Won',
                 'currency_code' => 'KPW',
                 'currency_numeric_code' => '408',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₩',
-                'fund' => '',
                 'iso_code' => 'KP',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            127 => 
-            array (
+            127 =>
+            array(
                 'id' => 129,
                 'country_name' => 'Korea, Republic of',
-                'currency' => 'Won',
+                'currency_name' => 'Won',
                 'currency_code' => 'KRW',
                 'currency_numeric_code' => '410',
                 'currency_decimals' => '0',
                 'currency_symbol' => '₩',
-                'fund' => '',
                 'iso_code' => 'KR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            128 => 
-            array (
+            128 =>
+            array(
                 'id' => 130,
                 'country_name' => 'Kuwait',
-                'currency' => 'Kuwaiti Dinar',
+                'currency_name' => 'Kuwaiti Dinar',
                 'currency_code' => 'KWD',
                 'currency_numeric_code' => '414',
                 'currency_decimals' => '3',
                 'currency_symbol' => 'د.ك',
-                'fund' => '',
                 'iso_code' => 'KW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            129 => 
-            array (
+            129 =>
+            array(
                 'id' => 131,
                 'country_name' => 'Kyrgyzstan',
-                'currency' => 'Som',
+                'currency_name' => 'Som',
                 'currency_code' => 'KGS',
                 'currency_numeric_code' => '417',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'лв',
-                'fund' => '',
                 'iso_code' => 'KG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            130 => 
-            array (
+            130 =>
+            array(
                 'id' => 132,
                 'country_name' => 'Lao People\'s Democratic Republic',
-                'currency' => 'Lao Kip',
+                'currency_name' => 'Lao Kip',
                 'currency_code' => 'LAK',
                 'currency_numeric_code' => '418',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₭',
-                'fund' => '',
                 'iso_code' => 'LA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            131 => 
-            array (
+            131 =>
+            array(
                 'id' => 133,
                 'country_name' => 'Latvia',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'LV',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            132 => 
-            array (
+            132 =>
+            array(
                 'id' => 134,
                 'country_name' => 'Lebanon',
-                'currency' => 'Lebanese Pound',
+                'currency_name' => 'Lebanese Pound',
                 'currency_code' => 'LBP',
                 'currency_numeric_code' => '422',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'LB',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            133 => 
-            array (
+            133 =>
+            array(
                 'id' => 135,
                 'country_name' => 'Lesotho',
-                'currency' => 'Loti',
+                'currency_name' => 'Loti',
                 'currency_code' => 'LSL',
                 'currency_numeric_code' => '426',
                 'currency_decimals' => '2',
-                'currency_symbol' => 'L
-',
-                'fund' => '',
+                'currency_symbol' => 'L',
                 'iso_code' => 'LS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            134 => 
-            array (
+            134 =>
+            array(
                 'id' => 136,
                 'country_name' => 'Lesotho',
-                'currency' => 'Rand',
+                'currency_name' => 'Rand',
                 'currency_code' => 'ZAR',
                 'currency_numeric_code' => '710',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'R',
-                'fund' => '',
                 'iso_code' => 'LS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            135 => 
-            array (
+            135 =>
+            array(
                 'id' => 137,
                 'country_name' => 'Liberia',
-                'currency' => 'Liberian Dollar',
+                'currency_name' => 'Liberian Dollar',
                 'currency_code' => 'LRD',
                 'currency_numeric_code' => '430',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'LR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            136 => 
-            array (
+            136 =>
+            array(
                 'id' => 138,
                 'country_name' => 'Libya',
-                'currency' => 'Libyan Dinar',
+                'currency_name' => 'Libyan Dinar',
                 'currency_code' => 'LYD',
                 'currency_numeric_code' => '434',
                 'currency_decimals' => '3',
                 'currency_symbol' => 'ل.د',
-                'fund' => '',
                 'iso_code' => 'LY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            137 => 
-            array (
+            137 =>
+            array(
                 'id' => 139,
                 'country_name' => 'Liechtenstein',
-                'currency' => 'Swiss Franc',
+                'currency_name' => 'Swiss Franc',
                 'currency_code' => 'CHF',
                 'currency_numeric_code' => '756',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'CHF',
-                'fund' => '',
                 'iso_code' => 'LI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            138 => 
-            array (
+            138 =>
+            array(
                 'id' => 140,
                 'country_name' => 'Lithuania',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'LT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            139 => 
-            array (
+            139 =>
+            array(
                 'id' => 141,
                 'country_name' => 'Luxembourg',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'LU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            140 => 
-            array (
+            140 =>
+            array(
                 'id' => 142,
                 'country_name' => 'Macao',
-                'currency' => 'Pataca',
+                'currency_name' => 'Pataca',
                 'currency_code' => 'MOP',
                 'currency_numeric_code' => '446',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'P',
-                'fund' => '',
                 'iso_code' => 'MO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            141 => 
-            array (
+            141 =>
+            array(
                 'id' => 143,
                 'country_name' => 'Macedonia, the Former Yugoslav Republic of',
-                'currency' => 'Denar',
+                'currency_name' => 'Denar',
                 'currency_code' => 'MKD',
                 'currency_numeric_code' => '807',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'ден',
-                'fund' => '',
                 'iso_code' => 'MK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            142 => 
-            array (
+            142 =>
+            array(
                 'id' => 144,
                 'country_name' => 'Madagascar',
-                'currency' => 'Malagasy Ariary',
+                'currency_name' => 'Malagasy Ariary',
                 'currency_code' => 'MGA',
                 'currency_numeric_code' => '969',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'MK',
-                'fund' => '',
                 'iso_code' => 'MG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            143 => 
-            array (
+            143 =>
+            array(
                 'id' => 145,
                 'country_name' => 'Malawi',
-                'currency' => 'Malawi Kwacha',
+                'currency_name' => 'Malawi Kwacha',
                 'currency_code' => 'MWK',
                 'currency_numeric_code' => '454',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'K',
-                'fund' => '',
                 'iso_code' => 'MW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            144 => 
-            array (
+            144 =>
+            array(
                 'id' => 146,
                 'country_name' => 'Malaysia',
-                'currency' => 'Malaysian Ringgit',
+                'currency_name' => 'Malaysian Ringgit',
                 'currency_code' => 'MYR',
                 'currency_numeric_code' => '458',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'RM',
-                'fund' => '',
                 'iso_code' => 'MY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            145 => 
-            array (
+            145 =>
+            array(
                 'id' => 147,
                 'country_name' => 'Maldives',
-                'currency' => 'Rufiyaa',
+                'currency_name' => 'Rufiyaa',
                 'currency_code' => 'MVR',
                 'currency_numeric_code' => '462',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Rf.',
-                'fund' => '',
                 'iso_code' => 'MV',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            146 => 
-            array (
+            146 =>
+            array(
                 'id' => 148,
                 'country_name' => 'Mali',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'ML',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            147 => 
-            array (
+            147 =>
+            array(
                 'id' => 149,
                 'country_name' => 'Malta',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'MT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            148 => 
-            array (
+            148 =>
+            array(
                 'id' => 150,
                 'country_name' => 'Marshall Islands',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'MH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            149 => 
-            array (
+            149 =>
+            array(
                 'id' => 151,
                 'country_name' => 'Martinique',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'MQ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            150 => 
-            array (
+            150 =>
+            array(
                 'id' => 152,
                 'country_name' => 'Mauritania',
-                'currency' => 'Ouguiya',
+                'currency_name' => 'Ouguiya',
                 'currency_code' => 'MRU',
                 'currency_numeric_code' => '929',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'UM',
-                'fund' => '',
                 'iso_code' => 'MR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            151 => 
-            array (
+            151 =>
+            array(
                 'id' => 153,
                 'country_name' => 'Mauritius',
-                'currency' => 'Mauritius Rupee',
+                'currency_name' => 'Mauritius Rupee',
                 'currency_code' => 'MUR',
                 'currency_numeric_code' => '480',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₨',
-                'fund' => '',
                 'iso_code' => 'MU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            152 => 
-            array (
+            152 =>
+            array(
                 'id' => 154,
                 'country_name' => 'Mayotte',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'YT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            153 => 
-            array (
+            153 =>
+            array(
                 'id' => 155,
                 'country_name' => 'Member Countries Of The African Development Bank Group',
-                'currency' => 'ADB Unit of Account',
+                'currency_name' => 'ADB Unit of Account',
                 'currency_code' => 'XUA',
                 'currency_numeric_code' => '965',
                 'currency_decimals' => 'N.A.',
-                'currency_symbol' => NULL,
-                'fund' => '',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 13:45:58',
             ),
-            154 => 
-            array (
+            154 =>
+            array(
                 'id' => 156,
                 'country_name' => 'Mexico',
-                'currency' => 'Mexican Peso',
+                'currency_name' => 'Mexican Peso',
                 'currency_code' => 'MXN',
                 'currency_numeric_code' => '484',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'MX',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            155 => 
-            array (
+            155 =>
+            array(
                 'id' => 157,
                 'country_name' => 'Mexico',
-            'currency' => 'Mexican Unidad de Inversion (UDI)',
+            'currency_name' => 'Mexican Unidad de Inversion (UDI)',
                 'currency_code' => 'MXV',
                 'currency_numeric_code' => '979',
                 'currency_decimals' => '2',
-                'currency_symbol' => NULL,
-                'fund' => '1',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 12:12:41',
             ),
-            156 => 
-            array (
+            156 =>
+            array(
                 'id' => 158,
                 'country_name' => 'Micronesia, Federated States of',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'FM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            157 => 
-            array (
+            157 =>
+            array(
                 'id' => 159,
                 'country_name' => 'Moldova, Republic of',
-                'currency' => 'Moldovan Leu',
+                'currency_name' => 'Moldovan Leu',
                 'currency_code' => 'MDL',
                 'currency_numeric_code' => '498',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'L',
-                'fund' => '',
                 'iso_code' => 'MD',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            158 => 
-            array (
+            158 =>
+            array(
                 'id' => 160,
                 'country_name' => 'Monaco',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'MC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            159 => 
-            array (
+            159 =>
+            array(
                 'id' => 161,
                 'country_name' => 'Mongolia',
-                'currency' => 'Tugrik',
+                'currency_name' => 'Tugrik',
                 'currency_code' => 'MNT',
                 'currency_numeric_code' => '496',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₮',
-                'fund' => '',
                 'iso_code' => 'MN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            160 => 
-            array (
+            160 =>
+            array(
                 'id' => 162,
                 'country_name' => 'Montenegro',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'ME',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            161 => 
-            array (
+            161 =>
+            array(
                 'id' => 163,
                 'country_name' => 'Montserrat',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'MS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            162 => 
-            array (
+            162 =>
+            array(
                 'id' => 164,
                 'country_name' => 'Morocco',
-                'currency' => 'Moroccan Dirham',
+                'currency_name' => 'Moroccan Dirham',
                 'currency_code' => 'MAD',
                 'currency_numeric_code' => '504',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'د.م.',
-                'fund' => '',
                 'iso_code' => 'MA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            163 => 
-            array (
+            163 =>
+            array(
                 'id' => 165,
                 'country_name' => 'Mozambique',
-                'currency' => 'Mozambique Metical',
+                'currency_name' => 'Mozambique Metical',
                 'currency_code' => 'MZN',
                 'currency_numeric_code' => '943',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'MT',
-                'fund' => '',
                 'iso_code' => 'MZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            164 => 
-            array (
+            164 =>
+            array(
                 'id' => 166,
                 'country_name' => 'Myanmar',
-                'currency' => 'Kyat',
+                'currency_name' => 'Kyat',
                 'currency_code' => 'MMK',
                 'currency_numeric_code' => '104',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'K',
-                'fund' => '',
                 'iso_code' => 'MM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            165 => 
-            array (
+            165 =>
+            array(
                 'id' => 167,
                 'country_name' => 'Namibia',
-                'currency' => 'Namibia Dollar',
+                'currency_name' => 'Namibia Dollar',
                 'currency_code' => 'NAD',
                 'currency_numeric_code' => '516',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'NA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            166 => 
-            array (
+            166 =>
+            array(
                 'id' => 168,
                 'country_name' => 'Namibia',
-                'currency' => 'Rand',
+                'currency_name' => 'Rand',
                 'currency_code' => 'ZAR',
                 'currency_numeric_code' => '710',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'R',
-                'fund' => '',
                 'iso_code' => 'NA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            167 => 
-            array (
+            167 =>
+            array(
                 'id' => 169,
                 'country_name' => 'Nauru',
-                'currency' => 'Australian Dollar',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'NR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            168 => 
-            array (
+            168 =>
+            array(
                 'id' => 170,
                 'country_name' => 'Nepal',
-                'currency' => 'Nepalese Rupee',
+                'currency_name' => 'Nepalese Rupee',
                 'currency_code' => 'NPR',
                 'currency_numeric_code' => '524',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₨',
-                'fund' => '',
                 'iso_code' => 'NP',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            169 => 
-            array (
+            169 =>
+            array(
                 'id' => 171,
                 'country_name' => 'Netherlands',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'NL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            170 => 
-            array (
+            170 =>
+            array(
                 'id' => 172,
                 'country_name' => 'New Caledonia',
-                'currency' => 'CFP Franc',
+                'currency_name' => 'CFP Franc',
                 'currency_code' => 'XPF',
                 'currency_numeric_code' => '953',
                 'currency_decimals' => '0',
                 'currency_symbol' => '₣',
-                'fund' => '',
                 'iso_code' => 'NC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            171 => 
-            array (
+            171 =>
+            array(
                 'id' => 173,
                 'country_name' => 'New Zealand',
-                'currency' => 'New Zealand Dollar',
+                'currency_name' => 'New Zealand Dollar',
                 'currency_code' => 'NZD',
                 'currency_numeric_code' => '554',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'NZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            172 => 
-            array (
+            172 =>
+            array(
                 'id' => 174,
                 'country_name' => 'Nicaragua',
-                'currency' => 'Cordoba Oro',
+                'currency_name' => 'Cordoba Oro',
                 'currency_code' => 'NIO',
                 'currency_numeric_code' => '558',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'C$',
-                'fund' => '',
                 'iso_code' => 'NI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            173 => 
-            array (
+            173 =>
+            array(
                 'id' => 175,
                 'country_name' => 'Niger',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'NE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            174 => 
-            array (
+            174 =>
+            array(
                 'id' => 176,
                 'country_name' => 'Nigeria',
-                'currency' => 'Naira',
+                'currency_name' => 'Naira',
                 'currency_code' => 'NGN',
                 'currency_numeric_code' => '566',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₦',
-                'fund' => '',
                 'iso_code' => 'NG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            175 => 
-            array (
+            175 =>
+            array(
                 'id' => 177,
                 'country_name' => 'Niue',
-                'currency' => 'New Zealand Dollar',
+                'currency_name' => 'New Zealand Dollar',
                 'currency_code' => 'NZD',
                 'currency_numeric_code' => '554',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'NU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            176 => 
-            array (
+            176 =>
+            array(
                 'id' => 178,
                 'country_name' => 'Norfolk Island',
-                'currency' => 'Australian Dollar',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'NF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            177 => 
-            array (
+            177 =>
+            array(
                 'id' => 179,
                 'country_name' => 'Northern Mariana Islands',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'MP',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            178 => 
-            array (
+            178 =>
+            array(
                 'id' => 180,
                 'country_name' => 'Norway',
-                'currency' => 'Norwegian Krone',
+                'currency_name' => 'Norwegian Krone',
                 'currency_code' => 'NOK',
                 'currency_numeric_code' => '578',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'NO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            179 => 
-            array (
+            179 =>
+            array(
                 'id' => 181,
                 'country_name' => 'Oman',
-                'currency' => 'Rial Omani',
+                'currency_name' => 'Rial Omani',
                 'currency_code' => 'OMR',
                 'currency_numeric_code' => '512',
                 'currency_decimals' => '3',
                 'currency_symbol' => '﷼',
-                'fund' => '',
                 'iso_code' => 'OM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            180 => 
-            array (
+            180 =>
+            array(
                 'id' => 182,
                 'country_name' => 'Pakistan',
-                'currency' => 'Pakistan Rupee',
+                'currency_name' => 'Pakistan Rupee',
                 'currency_code' => 'PKR',
                 'currency_numeric_code' => '586',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₨',
-                'fund' => '',
                 'iso_code' => 'PK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            181 => 
-            array (
+            181 =>
+            array(
                 'id' => 183,
                 'country_name' => 'Palau',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'PW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            182 => 
-            array (
+            182 =>
+            array(
                 'id' => 184,
                 'country_name' => 'Palestine, State Of',
-                'currency' => NULL,
+                'currency_name' => null,
                 'currency_code' => '',
                 'currency_numeric_code' => '',
                 'currency_decimals' => '',
-                'currency_symbol' => NULL,
-                'fund' => '',
+                'currency_symbol' => null,
                 'iso_code' => 'PS',
                 'deleted_at' => '2021-04-04 16:51:11',
             ),
-            183 => 
-            array (
+            183 =>
+            array(
                 'id' => 185,
                 'country_name' => 'Panama',
-                'currency' => 'Balboa',
+                'currency_name' => 'Balboa',
                 'currency_code' => 'PAB',
                 'currency_numeric_code' => '590',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'B/.',
-                'fund' => '',
                 'iso_code' => 'PA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            184 => 
-            array (
+            184 =>
+            array(
                 'id' => 186,
                 'country_name' => 'Panama',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'PA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            185 => 
-            array (
+            185 =>
+            array(
                 'id' => 187,
                 'country_name' => 'Papua New Guinea',
-                'currency' => 'Kina',
+                'currency_name' => 'Kina',
                 'currency_code' => 'PGK',
                 'currency_numeric_code' => '598',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'K',
-                'fund' => '',
                 'iso_code' => 'PG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            186 => 
-            array (
+            186 =>
+            array(
                 'id' => 188,
                 'country_name' => 'Paraguay',
-                'currency' => 'Guarani',
+                'currency_name' => 'Guarani',
                 'currency_code' => 'PYG',
                 'currency_numeric_code' => '600',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'Gs',
-                'fund' => '',
                 'iso_code' => 'PY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            187 => 
-            array (
+            187 =>
+            array(
                 'id' => 189,
                 'country_name' => 'Peru',
-                'currency' => 'Sol',
+                'currency_name' => 'Sol',
                 'currency_code' => 'PEN',
                 'currency_numeric_code' => '604',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'S/.',
-                'fund' => '',
                 'iso_code' => 'PE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            188 => 
-            array (
+            188 =>
+            array(
                 'id' => 190,
                 'country_name' => 'Philippines',
-                'currency' => 'Philippine Peso',
+                'currency_name' => 'Philippine Peso',
                 'currency_code' => 'PHP',
                 'currency_numeric_code' => '608',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₱',
-                'fund' => '',
                 'iso_code' => 'PH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            189 => 
-            array (
+            189 =>
+            array(
                 'id' => 191,
                 'country_name' => 'Pitcairn',
-                'currency' => 'New Zealand Dollar',
+                'currency_name' => 'New Zealand Dollar',
                 'currency_code' => 'NZD',
                 'currency_numeric_code' => '554',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'PN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            190 => 
-            array (
+            190 =>
+            array(
                 'id' => 192,
                 'country_name' => 'Poland',
-                'currency' => 'Zloty',
+                'currency_name' => 'Zloty',
                 'currency_code' => 'PLN',
                 'currency_numeric_code' => '985',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'zł',
-                'fund' => '',
                 'iso_code' => 'PL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            191 => 
-            array (
+            191 =>
+            array(
                 'id' => 193,
                 'country_name' => 'Portugal',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'PT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            192 => 
-            array (
+            192 =>
+            array(
                 'id' => 194,
                 'country_name' => 'Puerto Rico',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'PR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            193 => 
-            array (
+            193 =>
+            array(
                 'id' => 195,
                 'country_name' => 'Qatar',
-                'currency' => 'Qatari Rial',
+                'currency_name' => 'Qatari Rial',
                 'currency_code' => 'QAR',
                 'currency_numeric_code' => '634',
                 'currency_decimals' => '2',
                 'currency_symbol' => '﷼',
-                'fund' => '',
                 'iso_code' => 'QA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            194 => 
-            array (
+            194 =>
+            array(
                 'id' => 196,
                 'country_name' => 'Réunion',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'RE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            195 => 
-            array (
+            195 =>
+            array(
                 'id' => 197,
                 'country_name' => 'Romania',
-                'currency' => 'Romanian Leu',
+                'currency_name' => 'Romanian Leu',
                 'currency_code' => 'RON',
                 'currency_numeric_code' => '946',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'lei',
-                'fund' => '',
                 'iso_code' => 'RO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            196 => 
-            array (
+            196 =>
+            array(
                 'id' => 198,
                 'country_name' => 'Russian Federation',
-                'currency' => 'Russian Ruble',
+                'currency_name' => 'Russian Ruble',
                 'currency_code' => 'RUB',
                 'currency_numeric_code' => '643',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₽',
-                'fund' => '',
                 'iso_code' => 'RU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            197 => 
-            array (
+            197 =>
+            array(
                 'id' => 199,
                 'country_name' => 'Rwanda',
-                'currency' => 'Rwanda Franc',
+                'currency_name' => 'Rwanda Franc',
                 'currency_code' => 'RWF',
                 'currency_numeric_code' => '646',
                 'currency_decimals' => '0',
-                'currency_symbol' => '₣
-',
-                'fund' => '',
+                'currency_symbol' => '₣',
                 'iso_code' => 'RW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            198 => 
-            array (
+            198 =>
+            array(
                 'id' => 200,
                 'country_name' => 'Saint Barthélemy',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'BL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            199 => 
-            array (
+            199 =>
+            array(
                 'id' => 201,
                 'country_name' => 'Saint Helena, Ascension And Tristan Da Cunha',
-                'currency' => 'Saint Helena Pound',
+                'currency_name' => 'Saint Helena Pound',
                 'currency_code' => 'SHP',
                 'currency_numeric_code' => '654',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'SH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            200 => 
-            array (
+            200 =>
+            array(
                 'id' => 202,
                 'country_name' => 'Saint Kitts And Nevis',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'KN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            201 => 
-            array (
+            201 =>
+            array(
                 'id' => 203,
                 'country_name' => 'Saint Lucia',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'LC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            202 => 
-            array (
+            202 =>
+            array(
                 'id' => 204,
             'country_name' => 'Saint Martin (French Part)',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'MF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            203 => 
-            array (
+            203 =>
+            array(
                 'id' => 205,
                 'country_name' => 'Saint Pierre And Miquelon',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'PM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            204 => 
-            array (
+            204 =>
+            array(
                 'id' => 206,
                 'country_name' => 'Saint Vincent And The Grenadines',
-                'currency' => 'East Caribbean Dollar',
+                'currency_name' => 'East Caribbean Dollar',
                 'currency_code' => 'XCD',
                 'currency_numeric_code' => '951',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'VC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            205 => 
-            array (
+            205 =>
+            array(
                 'id' => 207,
                 'country_name' => 'Samoa',
-                'currency' => 'Tala',
+                'currency_name' => 'Tala',
                 'currency_code' => 'WST',
                 'currency_numeric_code' => '882',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'WS$',
-                'fund' => '',
                 'iso_code' => 'WS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            206 => 
-            array (
+            206 =>
+            array(
                 'id' => 208,
                 'country_name' => 'San Marino',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'SM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            207 => 
-            array (
+            207 =>
+            array(
                 'id' => 209,
                 'country_name' => 'Sao Tome And Principe',
-                'currency' => 'Dobra',
+                'currency_name' => 'Dobra',
                 'currency_code' => 'STN',
                 'currency_numeric_code' => '930',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Db',
-                'fund' => '',
                 'iso_code' => 'ST',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            208 => 
-            array (
+            208 =>
+            array(
                 'id' => 210,
                 'country_name' => 'Saudi Arabia',
-                'currency' => 'Saudi Riyal',
+                'currency_name' => 'Saudi Riyal',
                 'currency_code' => 'SAR',
                 'currency_numeric_code' => '682',
                 'currency_decimals' => '2',
                 'currency_symbol' => '﷼',
-                'fund' => '',
                 'iso_code' => 'SA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            209 => 
-            array (
+            209 =>
+            array(
                 'id' => 211,
                 'country_name' => 'Senegal',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'SN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            210 => 
-            array (
+            210 =>
+            array(
                 'id' => 212,
                 'country_name' => 'Serbia',
-                'currency' => 'Serbian Dinar',
+                'currency_name' => 'Serbian Dinar',
                 'currency_code' => 'RSD',
                 'currency_numeric_code' => '941',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Дин.',
-                'fund' => '',
                 'iso_code' => 'RS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            211 => 
-            array (
+            211 =>
+            array(
                 'id' => 213,
                 'country_name' => 'Seychelles',
-                'currency' => 'Seychelles Rupee',
+                'currency_name' => 'Seychelles Rupee',
                 'currency_code' => 'SCR',
                 'currency_numeric_code' => '690',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₨',
-                'fund' => '',
                 'iso_code' => 'SC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            212 => 
-            array (
+            212 =>
+            array(
                 'id' => 214,
                 'country_name' => 'Sierra Leone',
-                'currency' => 'Leone',
+                'currency_name' => 'Leone',
                 'currency_code' => 'SLL',
                 'currency_numeric_code' => '694',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Le',
-                'fund' => '',
                 'iso_code' => 'SL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            213 => 
-            array (
+            213 =>
+            array(
                 'id' => 215,
                 'country_name' => 'Singapore',
-                'currency' => 'Singapore Dollar',
+                'currency_name' => 'Singapore Dollar',
                 'currency_code' => 'SGD',
                 'currency_numeric_code' => '702',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'SG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            214 => 
-            array (
+            214 =>
+            array(
                 'id' => 216,
             'country_name' => 'Sint Maarten (Dutch Part)',
-                'currency' => 'Netherlands Antillean Guilder',
+                'currency_name' => 'Netherlands Antillean Guilder',
                 'currency_code' => 'ANG',
                 'currency_numeric_code' => '532',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'ƒ',
-                'fund' => '',
                 'iso_code' => 'SX',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            215 => 
-            array (
+            215 =>
+            array(
                 'id' => 217,
                 'country_name' => 'Sistema Unitario De Compensacion Regional De Pagos "Sucre"',
-                'currency' => 'Sucre',
+                'currency_name' => 'Sucre',
                 'currency_code' => 'XSU',
                 'currency_numeric_code' => '994',
                 'currency_decimals' => 'N.A.',
-                'currency_symbol' => NULL,
-                'fund' => '',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 13:46:24',
             ),
-            216 => 
-            array (
+            216 =>
+            array(
                 'id' => 218,
                 'country_name' => 'Slovakia',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'SK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            217 => 
-            array (
+            217 =>
+            array(
                 'id' => 219,
                 'country_name' => 'Slovenia',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'SI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            218 => 
-            array (
+            218 =>
+            array(
                 'id' => 220,
                 'country_name' => 'Solomon Islands',
-                'currency' => 'Solomon Islands Dollar',
+                'currency_name' => 'Solomon Islands Dollar',
                 'currency_code' => 'SBD',
                 'currency_numeric_code' => '090',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'SB',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            219 => 
-            array (
+            219 =>
+            array(
                 'id' => 221,
                 'country_name' => 'Somalia',
-                'currency' => 'Somali Shilling',
+                'currency_name' => 'Somali Shilling',
                 'currency_code' => 'SOS',
                 'currency_numeric_code' => '706',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'S',
-                'fund' => '',
                 'iso_code' => 'SO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            220 => 
-            array (
+            220 =>
+            array(
                 'id' => 222,
                 'country_name' => 'South Africa',
-                'currency' => 'Rand',
+                'currency_name' => 'Rand',
                 'currency_code' => 'ZAR',
                 'currency_numeric_code' => '710',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'R',
-                'fund' => '',
                 'iso_code' => 'ZA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            221 => 
-            array (
+            221 =>
+            array(
                 'id' => 223,
                 'country_name' => 'South Georgia And The South Sandwich Islands',
-                'currency' => NULL,
+                'currency_name' => null,
                 'currency_code' => '',
                 'currency_numeric_code' => '',
                 'currency_decimals' => '',
-                'currency_symbol' => NULL,
-                'fund' => '',
+                'currency_symbol' => null,
                 'iso_code' => 'GS',
                 'deleted_at' => '2021-04-04 16:51:16',
             ),
-            222 => 
-            array (
+            222 =>
+            array(
                 'id' => 224,
                 'country_name' => 'South Sudan',
-                'currency' => 'South Sudanese Pound',
+                'currency_name' => 'South Sudanese Pound',
                 'currency_code' => 'SSP',
                 'currency_numeric_code' => '728',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'SS£',
-                'fund' => '',
                 'iso_code' => 'SS',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            223 => 
-            array (
+            223 =>
+            array(
                 'id' => 225,
                 'country_name' => 'Spain',
-                'currency' => 'Euro',
+                'currency_name' => 'Euro',
                 'currency_code' => 'EUR',
                 'currency_numeric_code' => '978',
                 'currency_decimals' => '2',
                 'currency_symbol' => '€',
-                'fund' => '',
                 'iso_code' => 'ES',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            224 => 
-            array (
+            224 =>
+            array(
                 'id' => 226,
                 'country_name' => 'Sri Lanka',
-                'currency' => 'Sri Lanka Rupee',
+                'currency_name' => 'Sri Lanka Rupee',
                 'currency_code' => 'LKR',
                 'currency_numeric_code' => '144',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₨',
-                'fund' => '',
                 'iso_code' => 'LK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            225 => 
-            array (
+            225 =>
+            array(
                 'id' => 227,
                 'country_name' => 'Sudan',
-                'currency' => 'Sudanese Pound',
+                'currency_name' => 'Sudanese Pound',
                 'currency_code' => 'SDG',
                 'currency_numeric_code' => '938',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'SD',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            226 => 
-            array (
+            226 =>
+            array(
                 'id' => 228,
                 'country_name' => 'Suriname',
-                'currency' => 'Surinam Dollar',
+                'currency_name' => 'Surinam Dollar',
                 'currency_code' => 'SRD',
                 'currency_numeric_code' => '968',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'SR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            227 => 
-            array (
+            227 =>
+            array(
                 'id' => 229,
                 'country_name' => 'Svalbard And Jan Mayen',
-                'currency' => 'Norwegian Krone',
+                'currency_name' => 'Norwegian Krone',
                 'currency_code' => 'NOK',
                 'currency_numeric_code' => '578',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'SJ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            228 => 
-            array (
+            228 =>
+            array(
                 'id' => 230,
                 'country_name' => 'Sweden',
-                'currency' => 'Swedish Krona',
+                'currency_name' => 'Swedish Krona',
                 'currency_code' => 'SEK',
                 'currency_numeric_code' => '752',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'kr',
-                'fund' => '',
                 'iso_code' => 'SE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            229 => 
-            array (
+            229 =>
+            array(
                 'id' => 231,
                 'country_name' => 'Switzerland',
-                'currency' => 'Swiss Franc',
+                'currency_name' => 'Swiss Franc',
                 'currency_code' => 'CHF',
                 'currency_numeric_code' => '756',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'CHF',
-                'fund' => '',
                 'iso_code' => 'CH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            230 => 
-            array (
+            230 =>
+            array(
                 'id' => 232,
                 'country_name' => 'Switzerland',
-                'currency' => 'WIR Euro',
+                'currency_name' => 'WIR Euro',
                 'currency_code' => 'CHE',
                 'currency_numeric_code' => '947',
                 'currency_decimals' => '2',
-                'currency_symbol' => NULL,
-                'fund' => '1',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 12:13:55',
             ),
-            231 => 
-            array (
+            231 =>
+            array(
                 'id' => 233,
                 'country_name' => 'Switzerland',
-                'currency' => 'WIR Franc',
+                'currency_name' => 'WIR Franc',
                 'currency_code' => 'CHW',
                 'currency_numeric_code' => '948',
                 'currency_decimals' => '2',
-                'currency_symbol' => NULL,
-                'fund' => '1',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 12:13:48',
             ),
-            232 => 
-            array (
+            232 =>
+            array(
                 'id' => 234,
                 'country_name' => 'Syrian Arab Republic',
-                'currency' => 'Syrian Pound',
+                'currency_name' => 'Syrian Pound',
                 'currency_code' => 'SYP',
                 'currency_numeric_code' => '760',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'SY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            233 => 
-            array (
+            233 =>
+            array(
                 'id' => 235,
                 'country_name' => 'Taiwan, Province of China',
-                'currency' => 'New Taiwan Dollar',
+                'currency_name' => 'New Taiwan Dollar',
                 'currency_code' => 'TWD',
                 'currency_numeric_code' => '901',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'NT$',
-                'fund' => '',
                 'iso_code' => 'TW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            234 => 
-            array (
+            234 =>
+            array(
                 'id' => 236,
                 'country_name' => 'Tajikistan',
-                'currency' => 'Somoni',
+                'currency_name' => 'Somoni',
                 'currency_code' => 'TJS',
                 'currency_numeric_code' => '972',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'ЅМ',
-                'fund' => '',
                 'iso_code' => 'TJ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            235 => 
-            array (
+            235 =>
+            array(
                 'id' => 237,
                 'country_name' => 'Tanzania, United Republic Of',
-                'currency' => 'Tanzanian Shilling',
+                'currency_name' => 'Tanzanian Shilling',
                 'currency_code' => 'TZS',
                 'currency_numeric_code' => '834',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Sh',
-                'fund' => '',
                 'iso_code' => 'TZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            236 => 
-            array (
+            236 =>
+            array(
                 'id' => 238,
                 'country_name' => 'Thailand',
-                'currency' => 'Baht',
+                'currency_name' => 'Baht',
                 'currency_code' => 'THB',
                 'currency_numeric_code' => '764',
                 'currency_decimals' => '2',
                 'currency_symbol' => '฿',
-                'fund' => '',
                 'iso_code' => 'TH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            237 => 
-            array (
+            237 =>
+            array(
                 'id' => 239,
                 'country_name' => 'Timor-Leste',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'TL',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            238 => 
-            array (
+            238 =>
+            array(
                 'id' => 240,
                 'country_name' => 'Togo',
-                'currency' => 'CFA Franc BCEAO',
+                'currency_name' => 'CFA Franc BCEAO',
                 'currency_code' => 'XOF',
                 'currency_numeric_code' => '952',
                 'currency_decimals' => '0',
-                'currency_symbol' => 'CFA
-',
-                'fund' => '',
+                'currency_symbol' => 'CFA',
                 'iso_code' => 'TG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            239 => 
-            array (
+            239 =>
+            array(
                 'id' => 241,
                 'country_name' => 'Tokelau',
-                'currency' => 'New Zealand Dollar',
+                'currency_name' => 'New Zealand Dollar',
                 'currency_code' => 'NZD',
                 'currency_numeric_code' => '554',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'TK',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            240 => 
-            array (
+            240 =>
+            array(
                 'id' => 242,
                 'country_name' => 'Tonga',
-                'currency' => 'Pa’anga',
+                'currency_name' => 'Pa’anga',
                 'currency_code' => 'TOP',
                 'currency_numeric_code' => '776',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'T$',
-                'fund' => '',
                 'iso_code' => 'TO',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            241 => 
-            array (
+            241 =>
+            array(
                 'id' => 243,
                 'country_name' => 'Trinidad And Tobago',
-                'currency' => 'Trinidad and Tobago Dollar',
+                'currency_name' => 'Trinidad and Tobago Dollar',
                 'currency_code' => 'TTD',
                 'currency_numeric_code' => '780',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'TT$',
-                'fund' => '',
                 'iso_code' => 'TT',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            242 => 
-            array (
+            242 =>
+            array(
                 'id' => 244,
                 'country_name' => 'Tunisia',
-                'currency' => 'Tunisian Dinar',
+                'currency_name' => 'Tunisian Dinar',
                 'currency_code' => 'TND',
                 'currency_numeric_code' => '788',
                 'currency_decimals' => '3',
                 'currency_symbol' => 'د.ت',
-                'fund' => '',
                 'iso_code' => 'TN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            243 => 
-            array (
+            243 =>
+            array(
                 'id' => 245,
                 'country_name' => 'Turkey',
-                'currency' => 'Turkish Lira',
+                'currency_name' => 'Turkish Lira',
                 'currency_code' => 'TRY',
                 'currency_numeric_code' => '949',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₺',
-                'fund' => '',
                 'iso_code' => 'TR',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            244 => 
-            array (
+            244 =>
+            array(
                 'id' => 246,
                 'country_name' => 'Turkmenistan',
-                'currency' => 'Turkmenistan New Manat',
+                'currency_name' => 'Turkmenistan New Manat',
                 'currency_code' => 'TMT',
                 'currency_numeric_code' => '934',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'm',
-                'fund' => '',
                 'iso_code' => 'TM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            245 => 
-            array (
+            245 =>
+            array(
                 'id' => 247,
                 'country_name' => 'Turks And Caicos Islands',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'TC',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            246 => 
-            array (
+            246 =>
+            array(
                 'id' => 248,
                 'country_name' => 'Tuvalu',
-                'currency' => 'Australian Dollar',
+                'currency_name' => 'Australian Dollar',
                 'currency_code' => 'AUD',
                 'currency_numeric_code' => '036',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'TV',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            247 => 
-            array (
+            247 =>
+            array(
                 'id' => 249,
                 'country_name' => 'Uganda',
-                'currency' => 'Uganda Shilling',
+                'currency_name' => 'Uganda Shilling',
                 'currency_code' => 'UGX',
                 'currency_numeric_code' => '800',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'Sh',
-                'fund' => '',
                 'iso_code' => 'UG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            248 => 
-            array (
+            248 =>
+            array(
                 'id' => 250,
                 'country_name' => 'Ukraine',
-                'currency' => 'Hryvnia',
+                'currency_name' => 'Hryvnia',
                 'currency_code' => 'UAH',
                 'currency_numeric_code' => '980',
                 'currency_decimals' => '2',
                 'currency_symbol' => '₴',
-                'fund' => '',
                 'iso_code' => 'UA',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            249 => 
-            array (
+            249 =>
+            array(
                 'id' => 251,
                 'country_name' => 'United Arab Emirates',
-                'currency' => 'UAE Dirham',
+                'currency_name' => 'UAE Dirham',
                 'currency_code' => 'AED',
                 'currency_numeric_code' => '784',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'د.إ',
-                'fund' => '',
                 'iso_code' => 'AE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            250 => 
-            array (
+            250 =>
+            array(
                 'id' => 252,
                 'country_name' => 'United Kingdom',
-                'currency' => 'Pound Sterling',
+                'currency_name' => 'Pound Sterling',
                 'currency_code' => 'GBP',
                 'currency_numeric_code' => '826',
                 'currency_decimals' => '2',
                 'currency_symbol' => '£',
-                'fund' => '',
                 'iso_code' => 'GB',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            251 => 
-            array (
+            251 =>
+            array(
                 'id' => 253,
                 'country_name' => 'United States Minor Outlying Islands',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'UM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            252 => 
-            array (
+            252 =>
+            array(
                 'id' => 254,
                 'country_name' => 'United States',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'US',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            253 => 
-            array (
+            253 =>
+            array(
                 'id' => 255,
                 'country_name' => 'United States',
-            'currency' => 'US Dollar (Next day)',
+            'currency_name' => 'US Dollar (Next day)',
                 'currency_code' => 'USN',
                 'currency_numeric_code' => '997',
                 'currency_decimals' => '2',
-                'currency_symbol' => NULL,
-                'fund' => '1',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 12:21:53',
             ),
-            254 => 
-            array (
+            254 =>
+            array(
                 'id' => 256,
                 'country_name' => 'Uruguay',
-                'currency' => 'Peso Uruguayo',
+                'currency_name' => 'Peso Uruguayo',
                 'currency_code' => 'UYU',
                 'currency_numeric_code' => '858',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$U',
-                'fund' => '',
                 'iso_code' => 'UY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            255 => 
-            array (
+            255 =>
+            array(
                 'id' => 257,
                 'country_name' => 'Uruguay',
-            'currency' => 'Uruguay Peso en Unidades Indexadas (UI)',
+                'currency_name' => 'Uruguay Peso en Unidades Indexadas (UI)',
                 'currency_code' => 'UYI',
                 'currency_numeric_code' => '940',
                 'currency_decimals' => '0',
-                'currency_symbol' => NULL,
-                'fund' => '1',
-                'iso_code' => NULL,
+                'currency_symbol' => null,
+                'iso_code' => null,
                 'deleted_at' => '2021-04-04 12:22:08',
             ),
-            256 => 
-            array (
+            256 =>
+            array(
                 'id' => 258,
                 'country_name' => 'Uruguay',
-                'currency' => 'Unidad Previsional',
+                'currency_name' => 'Unidad Previsional',
                 'currency_code' => 'UYW',
                 'currency_numeric_code' => '927',
                 'currency_decimals' => '4',
                 'currency_symbol' => 'UYW',
-                'fund' => '',
                 'iso_code' => 'UY',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            257 => 
-            array (
+            257 =>
+            array(
                 'id' => 259,
                 'country_name' => 'Uzbekistan',
-                'currency' => 'Uzbekistan Sum',
+                'currency_name' => 'Uzbekistan Sum',
                 'currency_code' => 'UZS',
                 'currency_numeric_code' => '860',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'лв',
-                'fund' => '',
                 'iso_code' => 'UZ',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            258 => 
-            array (
+            258 =>
+            array(
                 'id' => 260,
                 'country_name' => 'Vanuatu',
-                'currency' => 'Vatu',
+                'currency_name' => 'Vatu',
                 'currency_code' => 'VUV',
                 'currency_numeric_code' => '548',
                 'currency_decimals' => '0',
                 'currency_symbol' => 'Vt',
-                'fund' => '',
                 'iso_code' => 'VU',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            259 => 
-            array (
+            259 =>
+            array(
                 'id' => 261,
                 'country_name' => 'Venezuela, Bolivarian Republic of',
-                'currency' => 'Bolívar Soberano',
+                'currency_name' => 'Bolívar Soberano',
                 'currency_code' => 'VES',
                 'currency_numeric_code' => '928',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'Bs.',
-                'fund' => '',
                 'iso_code' => 'VE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            260 => 
-            array (
+            260 =>
+            array(
                 'id' => 262,
                 'country_name' => 'Viet Nam',
-                'currency' => 'Dong',
+                'currency_name' => 'Dong',
                 'currency_code' => 'VND',
                 'currency_numeric_code' => '704',
                 'currency_decimals' => '0',
                 'currency_symbol' => '₫',
-                'fund' => '',
                 'iso_code' => 'VN',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            261 => 
-            array (
+            261 =>
+            array(
                 'id' => 263,
                 'country_name' => 'Virgin Islands, British',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'VG',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            262 => 
-            array (
+            262 =>
+            array(
                 'id' => 264,
                 'country_name' => 'Virgin Islands, U.S.',
-                'currency' => 'US Dollar',
+                'currency_name' => 'US Dollar',
                 'currency_code' => 'USD',
                 'currency_numeric_code' => '840',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'VI',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            263 => 
-            array (
+            263 =>
+            array(
                 'id' => 265,
                 'country_name' => 'Wallis And Futuna',
-                'currency' => 'CFP Franc',
+                'currency_name' => 'CFP Franc',
                 'currency_code' => 'XPF',
                 'currency_numeric_code' => '953',
                 'currency_decimals' => '0',
                 'currency_symbol' => '₣',
-                'fund' => '',
                 'iso_code' => 'WF',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            264 => 
-            array (
+            264 =>
+            array(
                 'id' => 266,
                 'country_name' => 'Western Sahara',
-                'currency' => 'Moroccan Dirham',
+                'currency_name' => 'Moroccan Dirham',
                 'currency_code' => 'MAD',
                 'currency_numeric_code' => '504',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'د.م.',
-                'fund' => '',
                 'iso_code' => 'EH',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            265 => 
-            array (
+            265 =>
+            array(
                 'id' => 267,
                 'country_name' => 'Yemen',
-                'currency' => 'Yemeni Rial',
+                'currency_name' => 'Yemeni Rial',
                 'currency_code' => 'YER',
                 'currency_numeric_code' => '886',
                 'currency_decimals' => '2',
                 'currency_symbol' => '﷼',
-                'fund' => '',
                 'iso_code' => 'YE',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            266 => 
-            array (
+            266 =>
+            array(
                 'id' => 268,
                 'country_name' => 'Zambia',
-                'currency' => 'Zambian Kwacha',
+                'currency_name' => 'Zambian Kwacha',
                 'currency_code' => 'ZMW',
                 'currency_numeric_code' => '967',
                 'currency_decimals' => '2',
                 'currency_symbol' => 'ZK',
-                'fund' => '',
                 'iso_code' => 'ZM',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            267 => 
-            array (
+            267 =>
+            array(
                 'id' => 269,
                 'country_name' => 'Zimbabwe',
-                'currency' => 'Zimbabwe Dollar',
+                'currency_name' => 'Zimbabwe Dollar',
                 'currency_code' => 'ZWL',
                 'currency_numeric_code' => '932',
                 'currency_decimals' => '2',
                 'currency_symbol' => '$',
-                'fund' => '',
                 'iso_code' => 'ZW',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
             ),
-            268 => 
-            array (
+            268 =>
+            array(
                 'id' => 270,
                 'country_name' => 'Antartica',
-                'currency' => NULL,
-                'currency_code' => NULL,
-                'currency_numeric_code' => NULL,
-                'currency_decimals' => NULL,
-                'currency_symbol' => NULL,
-                'fund' => NULL,
-                'iso_code' => NULL,
-                'deleted_at' => NULL,
+                'currency_name' => null,
+                'currency_code' => null,
+                'currency_numeric_code' => null,
+                'currency_decimals' => null,
+                'currency_symbol' => null,
+                'iso_code' => null,
+                'deleted_at' => null,
             ),
         ));
-        
-        
     }
 }
